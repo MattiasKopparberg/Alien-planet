@@ -1,4 +1,4 @@
-import app from "./app.js";
+import { app } from "./app.js";
 import { db } from "./config/db.js";
 
 const PORT = 3000;
@@ -11,7 +11,6 @@ const gracefulShutdown = async () => {
   console.log("Shutting down gracefully...");
 
   try {
-
     await db.end();
 
     server.close(() => {
@@ -19,9 +18,7 @@ const gracefulShutdown = async () => {
 
       process.exit(0);
     });
-
   } catch (err) {
-
     console.error("Shutdown error:", err);
 
     process.exit(1);
