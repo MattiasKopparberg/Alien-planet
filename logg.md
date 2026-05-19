@@ -7,6 +7,7 @@ Kunskapsdomän: Aliens har en hemplanet. En planet kan ha flera alien-typer.
 #### Primärt ansvar: 
 - Rebecka 
 - Lisette
+- Emelie
 #### Stack: 
 - React 
 - TypeScript  
