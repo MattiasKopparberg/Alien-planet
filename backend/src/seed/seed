@@ -1,0 +1,27 @@
+DROP DATABASE alienplanets;
+CREATE DATABASE alienplanets
+USE alienplanets
+CREATE TABLE planets (
+    planet_id int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(25) NOT NULL,
+    image_url varchar(50),
+    surface_area float,
+    avg_temp float
+)
+
+INSERT INTO planets (name, image_url, surface_area, avg_temp) VALUES 
+('Mercury', 'mercury.jpg', 74.8, 167),
+('Venus', 'venus.jpg', 460.2, 464),
+('Earth', 'earth.jpg', 510.1, 15),
+('Mars', 'mars.jpg', 144.8, -65),
+('Jupiter', 'jupiter.jpg', 61420, -110),
+('Saturn', 'saturn.jpg', 42700, -140),
+('Uranus', 'uranus.jpg', 8083, -195),
+('Neptune', 'neptune.jpg', 7618, -200),
+('Kepler-22b', 'kepler22b.jpg', 900, 22),
+('Proxima-b', 'proximab.jpg', 120, -39),
+('Gliese-581g', 'gliese581g.jpg', 180, -12),
+('Pandora', 'pandora.jpg', 95, 18),
+('LV-426', 'lv426.jpg', 110, -45),
+('Arrakis', 'arrakis.jpg', 300, 58),
+('Hoth', 'hoth.jpg', 250, -60);
