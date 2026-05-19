@@ -23,8 +23,8 @@ Kunskapsdomän: Aliens har en hemplanet. En planet kan ha flera alien-typer.
 - Express
 
 
-✅ Ansvarsområden
-✅ Stack
-✅ Initierat repo med "project" 
+✅ Ansvarsområden  
+✅ Stack  
+✅ Initierat repo med "project"   
 
 
