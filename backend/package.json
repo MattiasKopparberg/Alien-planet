@@ -1,0 +1,32 @@
+{
+  "name": "alien-planet-be",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/MattiasKopparberg/Alien-planet#readme",
+  "bugs": {
+    "url": "https://github.com/MattiasKopparberg/Alien-planet/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattiasKopparberg/Alien-planet.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.0",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  }
+}
