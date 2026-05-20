@@ -7,7 +7,7 @@ export interface Planet {
 
 export interface Alien {
   alien_id: number;
-  planet_id: number; // Foreign key to Planet
+  planet_id: number;
   species: string;
   aggression: "hostile" | "neutral" | "friendly";
   habitat: "water" | "surface" | "airborne";
