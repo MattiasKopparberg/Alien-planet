@@ -76,6 +76,7 @@ Mattias
 - App.js (2 h)
 
 Lisette
+
 ✅ Generera planeter ( 30 min)
 
 ✅ Generera bakgrundsbilder ( 30 min )
