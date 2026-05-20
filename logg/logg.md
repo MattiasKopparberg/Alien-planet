@@ -48,10 +48,6 @@ Första utkast endpoints
 Skiss för att undersöka vad appen ska kunna göra  
 ![Vyer](./img/logg_vyer.png)
 
-Förslag på genererade Aliens
-
-Snabb wireframe
-
 ### Issues Done
 - Frontend Routing installerad / Basic setup
 - Frontend mappstruktur
@@ -80,11 +76,17 @@ Mattias
 - App.js (2 h)
 
 Lisette
-- Generera planeter ( 30 min)
-- Generera bakgrundsbilder ( 30 min )
-- Bygga återanvändbar kortkompontet (2 h)
+✅ Generera planeter ( 30 min)
+✅ Generera bakgrundsbilder ( 30 min )
+
+✅ Definera typer för Aliens och Planeter (30 min)
+✅ Bygga AlienCard -kompontet (30 h)
+✅ Bygga PlanetCard -kompontet (10 h)
 
 Rebecka 
 - Bygga återanvändbar listkompontet (2 h)
+
+
+
 
 
