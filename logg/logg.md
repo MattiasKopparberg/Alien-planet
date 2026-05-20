@@ -77,10 +77,15 @@ Mattias
 
 Lisette
 ✅ Generera planeter ( 30 min)
+
 ✅ Generera bakgrundsbilder ( 30 min )
+
 ![Genererade bilder](./img/genererade_bilder.png)
+
 ✅ Definera typer för Aliens och Planeter (30 min)
+
 ✅ Bygga AlienCard -kompontet (30 h)
+
 ✅ Bygga PlanetCard -kompontet (10 h)
 
 Rebecka 
