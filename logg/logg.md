@@ -90,8 +90,11 @@ Lisette
 ✅ Bygga PlanetCard -kompontet (10 h)
 
 Rebecka 
+
 ✅ Bygga återanvändbar listkompontet (2 h)
+
 ✅ Angett Planets-vyn mockdata för att testa List & PlanetCard-component 
+
 ✅ Angett Aliens-vyn mockdata för att testa List & AlienCard-component
 
 
