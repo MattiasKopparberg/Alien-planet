@@ -3,7 +3,6 @@ export interface Planet {
   name: string;
   surface_area: number;
   avg_temp: number;
-  image_url?: string;
 }
 
 export interface Alien {
@@ -12,5 +11,4 @@ export interface Alien {
   species: string;
   aggression: "hostile" | "neutral" | "friendly";
   habitat: "water" | "surface" | "airborne";
-  image_url?: string;
 }
