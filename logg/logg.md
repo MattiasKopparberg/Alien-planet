@@ -49,9 +49,9 @@ Skiss för att undersöka vad appen ska kunna göra
 ![Vyer](./img/logg_vyer.png)
 
 ### Issues Done
-- Frontend Routing installerad / Basic setup
-- Frontend mappstruktur
-- komprimera och importera bilder på aliens
+✅ Frontend Routing installerad / Basic setup
+✅ Frontend mappstruktur
+✅komprimera och importera bilder på aliens
 
 ### Code hygien
 - Branch baserat på issue
@@ -78,7 +78,7 @@ Mattias
 Lisette
 ✅ Generera planeter ( 30 min)
 ✅ Generera bakgrundsbilder ( 30 min )
-
+![Genererade bilder](./img/genererade_bilder.png)
 ✅ Definera typer för Aliens och Planeter (30 min)
 ✅ Bygga AlienCard -kompontet (30 h)
 ✅ Bygga PlanetCard -kompontet (10 h)
