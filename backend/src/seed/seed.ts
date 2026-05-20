@@ -36,7 +36,7 @@ try {
 
   for (const statement of dbInitStatements) {
     await connection.query(statement);
-    console.log("Executed:", statement.slice(0, 60));
+    console.log(`Executed: ${statement.slice(0, 75)} ${statement.length > 75 && "..."}`);
   }
 
   console.log("Database seeded!");

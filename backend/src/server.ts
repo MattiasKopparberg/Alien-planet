@@ -28,7 +28,7 @@ const gracefulShutdown = async () => {
 process.on("SIGINT", gracefulShutdown);
 process.on("SIGTERM", gracefulShutdown);
 } catch(err){
-  console.log("Error connecting t server")
+  console.log("Error connecting to server")
 }
 
 
