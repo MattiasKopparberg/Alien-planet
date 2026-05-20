@@ -1,5 +1,5 @@
-import mysql from "mysql2";
-import { db } from "../config/db.js";
+import mysql from "mysql2/promise";
+import "dotenv/config";
 
 const dbInitStatements = [
   "DROP DATABASE IF EXISTS alienplanets",
@@ -13,26 +13,37 @@ const dbInitStatements = [
 
 console.log("Seed script running");
 
-const connection = await db.getConnection();
+const adminDb = mysql.createPool({
+  host: process.env.DB_HOST || "localhost",
+  user: process.env.DB_USER || "",
+  password: process.env.DB_PASSWORD || "",
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0,
+});
 
-console.log("Connection to DB established");
+const connection = await adminDb.getConnection();
 
-const runStatements = async (statements: string[]) => {
-  for (const statement of statements) {
-    try {
-      await connection.query(statement);
-      console.log(
-        `Executed: ${statement.slice(0, 75)} ${statement.length > 75 && "..."}`,
-      );
-    } catch (e) {
-      console.error("DB operation failed: ", e);
-    }
+try {
+
+  console.log("Resetting database...");
+
+  await connection.query("DROP DATABASE IF EXISTS alienplanets");
+  await connection.query("CREATE DATABASE alienplanets");
+  await connection.query("USE alienplanets");
+
+  console.log("Database created");
+
+  for (const statement of dbInitStatements) {
+    await connection.query(statement);
+    console.log(`Executed: ${statement.slice(0, 75)} ${statement.length > 75 && "..."}`);
   }
-};
 
-await runStatements(dbInitStatements);
+  console.log("Database seeded!");
+} catch (err) {
+  console.error("Seed failed:", err);
+} finally {
+  if (connection) connection.release();
+  process.exit(0);
+}
 
-console.log("Database seeded!");
-
-connection.release();
-process.exit(0);

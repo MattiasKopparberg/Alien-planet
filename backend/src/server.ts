@@ -3,10 +3,10 @@ import { db } from "./config/db.js";
 
 const PORT = 3000;
 
-const server = app.listen(PORT, () => {
+try{
+  const server = app.listen(PORT, () => {
   console.log(`Running on port ${PORT}`);
 });
-
 const gracefulShutdown = async () => {
   console.log("Shutting down gracefully...");
 
@@ -27,3 +27,9 @@ const gracefulShutdown = async () => {
 
 process.on("SIGINT", gracefulShutdown);
 process.on("SIGTERM", gracefulShutdown);
+} catch(err){
+  console.log("Error connecting to server")
+}
+
+
+
