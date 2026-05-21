@@ -49,26 +49,29 @@ Skiss för att undersöka vad appen ska kunna göra
 ![Vyer](./img/logg_vyer.png)
 
 ### Issues Done
+
 ✅ Frontend Routing installerad / Basic setup
 ✅ Frontend mappstruktur
 ✅komprimera och importera bilder på aliens
 
 ### Code hygien
+
 - Branch baserat på issue
-  
 
 ✅ Dependencies installerade
 ✅ Mappstruktur på plats
 ✅ Script för seeding av DB
 
-
 ## 2026-05-20
 
 ### Agilt arbete
+
 - Vi har definerat mer vad varje kolumn betyder och innebär
 
-### DAGENS AGENDA 
+### DAGENS AGENDA
+
 Mattias
+
 - Göra klart seeding bugs (2 h)
   Admin server för att stoppa initsiering av pool före databasen finns
 - Seed ändring (5 min)
@@ -89,15 +92,20 @@ Lisette
 
 ✅ Bygga PlanetCard -kompontet (10 h)
 
-Rebecka 
+Rebecka
 
 ✅ Bygga återanvändbar listkompontet (2 h)
 
-✅ Angett Planets-vyn mockdata för att testa List & PlanetCard-component 
+✅ Angett Planets-vyn mockdata för att testa List & PlanetCard-component
 
 ✅ Angett Aliens-vyn mockdata för att testa List & AlienCard-component
 
+Linnéa
 
+✅ Code reviews gjorda under dagen och i efterhand 21/5
 
+✅ Query function export från config/db.js (i efterhand 21/5)
 
+✅ Alien + Aggression types (i efterhand 21/5)
 
+✅ Alien models: All aliens, alien by id, aliens by aggression (i efterhand 21/5)
