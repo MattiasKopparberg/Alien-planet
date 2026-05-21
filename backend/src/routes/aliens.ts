@@ -11,5 +11,5 @@ import {
 const router = express.Router();
 
 router.get("/", getAliens)
-router.get("/:id", getAlienImage)
+router.get("/:id/image", getAlienImage)
 router.get("/:id", getAlienById)

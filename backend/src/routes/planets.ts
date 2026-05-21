@@ -11,5 +11,5 @@ import {
 const router = express.Router();
 
 router.get("/", getPlanets)
-router.get("/:id", getPlanetImage)
+router.get("/:id/image", getPlanetImage)
 router.get("/:id", getPlanetById)
