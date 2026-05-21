@@ -1,6 +1,7 @@
 import PlanetCard from "../components/planets/PlanetCard";
 import List from "../components/List";
 import type { Planet } from "../types/types";
+import "../App.css";
 
 const mockDataPlanets: Planet[] = [
   {
@@ -19,7 +20,7 @@ const mockDataPlanets: Planet[] = [
 
 export default function Planets() {
   return (
-    <div>
+    <div className="text-light-purple">
       <h1>Planets</h1>
       {/* renderItem skickas till List och skapar ett PlanetCard per planet-objekt */}
       <List
