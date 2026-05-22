@@ -1,6 +1,7 @@
 import AlienCard from "../components/aliens/AlienCard";
 import List from "../components/List";
 import type { Alien } from "../types/types";
+import "../App.css";
 
 const mockDataAliens: Alien[] = [
   {
@@ -21,7 +22,7 @@ const mockDataAliens: Alien[] = [
 
 export default function Aliens() {
   return (
-    <div>
+    <div className="text-light-purple">
       <h1>Aliens</h1>
       <List
         items={mockDataAliens}

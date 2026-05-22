@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --color-space-purple: #181031;
+    --color-space-lighter: #2F254E;
+    --color-light-purple: #D0C4DD;
+    --color-yellow: #F0BC5C;
+    --color-carmine: #BA1F33;
+    --font-display: "Orbitron", sans-serif;
+}
