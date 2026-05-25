@@ -1,4 +1,5 @@
 import mysql from "mysql2/promise";
+import type { RowDataPacket } from "mysql2/promise"
 import "dotenv/config";
 
 export const db = mysql.createPool({
@@ -12,10 +13,13 @@ export const db = mysql.createPool({
   queueLimit: 0,
 });
 
-export const query = async (sql: string, params?: any[]) => {
+export const query = async <T extends RowDataPacket[]>(
+  sql: string,
+  params?: any[],
+): Promise<T> => {
   try {
     const [rows] = await db.execute(sql, params);
-    return rows;
+    return rows as T;
   } catch (e) {
     console.error("Database error: ", e);
     throw e;

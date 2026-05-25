@@ -1,8 +1,18 @@
-export type Aggression = "friendly" | "neutral" | "aggressive";
+export type Aggression = "hostile" | "neutral" | "friendly";
 
-export type Alien = {
-  alien_id: number;
+export type Habitat = "water" | "surface" | "airborne";
+
+export interface Planet {
+  planet_id?: number;
+  name: string;
+  surface_area: number;
+  avg_temp: number;
+}
+
+export interface Alien {
+  alien_id?: number;
   species: string;
-  aggression: Aggression;
+  aggression?: Aggression;
+  habitat: Habitat;
   planet_id: number;
-};
+}

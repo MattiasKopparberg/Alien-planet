@@ -13,12 +13,12 @@ export const findAllAliens = async () => {
   }
 };
 
-export const findAlienById = async (id: number) => {
+export const findAlienById = async (id: number): Promise<Alien | null> => {
   try {
     const aliens = (await query("SELECT * FROM aliens WHERE alien_id = ?", [
       id,
     ])) as Alien[];
-    return aliens.length > 0 ? aliens[0] : null;
+     return aliens[0] ?? null;
   } catch (e) {
     console.error("Query failed in findAlienById: ", e);
     throw e;

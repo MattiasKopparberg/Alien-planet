@@ -1,15 +1,15 @@
 import express from "express"
 import { 
-    getAliens,
+    getAllAliens,
     getAlienById,
-    getAlienImage
+    // getAlienImage
     // createAlien,
     // updateAlien,
     // deleteAlien,
-} from "../controller/AliensController.js"
+} from "../controller/aliensController.js"
 
 const router = express.Router();
 
-router.get("/", getAliens)
-router.get("/:id/image", getAlienImage)
+router.get("/", getAllAliens)
+// router.get("/:id/image", getAlienImage)
 router.get("/:id", getAlienById)
