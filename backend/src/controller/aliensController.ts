@@ -22,12 +22,12 @@ export const getAlienById = async (
   try {
     const id = Number(req.params.id);
     if(isNaN(id) || id <= 0) {
-      res.status(400).json({ error: "Invalid device ID"})
+      res.status(400).json({ error: "Invalid Alien ID"})
       return
     }
     const alien = await alienService.getAlienById(id)
     if (!alien) {
-      res.status(404).json({ error: "Device not found"});
+      res.status(404).json({ error: "Alien not found"});
       return
     }
     res.status(200).json(alien)

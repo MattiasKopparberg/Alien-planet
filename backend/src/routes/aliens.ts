@@ -13,3 +13,5 @@ const router = express.Router();
 router.get("/", getAllAliens)
 // router.get("/:id/image", getAlienImage)
 router.get("/:id", getAlienById)
+
+export default router
