@@ -243,6 +243,6 @@ Lisette:
 ✅ - Impleterat fallbavk om backend inte kan leverera en bild ska ett placeholder-kort visas. 
 AlienCard visar en alien-placeholder och PlanetCard visar en planet-placeholder via onError på img-taggen. (1 h för båda punkter)
 
-Rebecka:
+Rebecka: ✅ - Implementerat fetch-funktion i api.ts för att hämta alla Aliens med felhantering. Skapade även custom hook useAliens som hämtar api-svaret och sparar i state samt error-state för felhantering.  
 
 Emelie:
