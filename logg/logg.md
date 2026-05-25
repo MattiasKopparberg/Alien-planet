@@ -113,7 +113,7 @@ Linnéa (mestadels frånvarande 20/5)
 
 ✅ Alien models: All aliens, alien by id, aliens by aggression (i efterhand 21/5)
 
-## 2026-05-26
+## 2026-05-25
 
 ### Avslut sprint 0 med retrospektiv, 10:00 - 11:00
 
