@@ -76,7 +76,10 @@ Mattias
   Admin server för att stoppa initsiering av pool före databasen finns
 - Seed ändring (5 min)
   Seed skapade fortfarande planet_image column för planet table, tog bort det
-- App.js (2 h)
+- App.js (30 min)
+
+- Routes
+  (30 min)
 
 Lisette
 
