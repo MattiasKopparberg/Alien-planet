@@ -6,7 +6,10 @@ export default function AlienCard({ alien }: { alien: Alien }) {
       <img
         src={`/images/aliens/${alien.alien_id}.png`}
         alt={alien.species}
-        onError={(e) => (e.currentTarget.src = "/images/placeholder.png")}
+        onError={(e) => {
+          e.currentTarget.src = "/Alien-fallback.jpg";
+          e.currentTarget.onerror = null; // förhindrar infinity loop
+        }}
       />
       <h3>{alien.species}</h3>
       <p>Aggression: {alien.aggression}</p>
