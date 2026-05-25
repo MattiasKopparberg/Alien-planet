@@ -91,9 +91,9 @@ Lisette
 
 ✅ Definera typer för Aliens och Planeter (30 min)
 
-✅ Bygga AlienCard -kompontet (30 h)
+✅ Bygga AlienCard -kompontet (30 min)
 
-✅ Bygga PlanetCard -kompontet (10 h)
+✅ Bygga PlanetCard -kompontet (10 min)
 
 Rebecka
 
@@ -238,6 +238,10 @@ Linnéa:
 (Est sammanlagt 2h för bildpunkterna)
 
 Lisette:
+✅ - Genererat två fallback bilder ifall Alien- eller Planet bild inte kan laddas.
+
+✅ - Impleterat fallbavk om backend inte kan leverera en bild ska ett placeholder-kort visas. 
+AlienCard visar en alien-placeholder och PlanetCard visar en planet-placeholder via onError på img-taggen. (1 h för båda punkter)
 
 Rebecka:
 
