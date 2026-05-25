@@ -6,7 +6,10 @@ export default function PlanetCard({ planet }: { planet: Planet }) {
       <img
         src={`/images/planets/${planet.planet_id}.png`}
         alt={planet.name}
-        onError={(e) => (e.currentTarget.src = "/images/placeholder.png")}
+        onError={(e) => {
+          e.currentTarget.src = "/Planet-fallback.jpg";
+          e.currentTarget.onerror = null;
+        }}
       />
       <h3>{planet.name}</h3>
       <p>Surface Area: {planet.surface_area}</p>
