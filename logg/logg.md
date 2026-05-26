@@ -255,9 +255,7 @@ Emelie:</br>
 
 ## 2026-05-26
 
-*LISETTE LOGGAR FÖR STANDUP HÄR*
-
-*NÅGON ANNAN RETRO-LOGGAR HÄR*
+*MATTIAS LOGGAR IAG*
 
 ### Dagens jobb
 Mattias:  
@@ -270,7 +268,10 @@ Linnéa (glömde både att estimera tid samt att kolla hur lång tid det tog):
 ✅ - Middleware för error hantering + refaktorisera 404 till eget middleware  
 
 Lisette:  
-✅ - 
+✅ - Haft möte med frontend hela förmiddagen gällande design
+✅ - Skapat dsignsystem
+✅  - Gjort wireframes/protoyper
+
 
 Rebecka:  
 ✅ - 
