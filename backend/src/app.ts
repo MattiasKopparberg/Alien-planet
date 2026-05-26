@@ -9,7 +9,7 @@ export const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173/", //To be replaced with variable
+    origin: "http://localhost:5173", //To be replaced with variable
   }),
 );
 
