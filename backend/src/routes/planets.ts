@@ -8,7 +8,7 @@ import {
   // deletePlanet,
 } from "../controller/planetsController.js";
 
-const router = express.Router();
+// const router = express.Router();
 
 router.get("/", getPlanets);
 // router.get("/:id/image", getPlanetImage)

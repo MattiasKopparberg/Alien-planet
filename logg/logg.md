@@ -113,7 +113,7 @@ Linnéa (mestadels frånvarande 20/5)
 
 ✅ Alien models: All aliens, alien by id, aliens by aggression (i efterhand 21/5)
 
-## 2026-05-26
+## 2026-05-25
 
 ### Avslut sprint 0 med retrospektiv, 10:00 - 11:00
 
@@ -230,12 +230,14 @@ Sprint# - Arkiv för respektive sprint
 ### Dagens jobb
 
 Mattias:
+✅ Alien GET endpoint (est 2h, faktiskt 1h 45m)
+✅ Planet GET endpoint (est 1h)
 
 Linnéa:  
 ✅ Grupplogg (est 30m, faktisk tid 45m)  
-⬜ Skapa api-länk för bild för specifik planet, med route + controller (felhantering, anropa model som i sin tur hämtar static file)  
-⬜ Skapa api-länk för bild för specifik planet, med route + controller (felhantering, anropa model som i sin tur hämtar static file)  
-(Est sammanlagt 2h för bildpunkterna)
+✅ Skapa api-länk för bild för specifik planet, med route + controller (felhantering, anropa model som i sin tur hämtar static file)  
+✅ Skapa api-länk för bild för specifik planet, med route + controller (felhantering, anropa model som i sin tur hämtar static file)  
+(Est sammanlagt 2h för bildpunkterna, faktisk tid ca 2h)
 
 Lisette:
 ✅ - Genererat två fallback bilder ifall Alien- eller Planet bild inte kan laddas.
@@ -243,6 +245,6 @@ Lisette:
 ✅ - Impleterat fallbavk om backend inte kan leverera en bild ska ett placeholder-kort visas. 
 AlienCard visar en alien-placeholder och PlanetCard visar en planet-placeholder via onError på img-taggen. (1 h för båda punkter)
 
-Rebecka:
+Rebecka: ✅ - Implementerat fetch-funktion i api.ts för att hämta alla Aliens med felhantering. Skapade även custom hook useAliens som hämtar api-svaret och sparar i state samt error-state för felhantering. (1 1/2h ca) 
 
 Emelie:
