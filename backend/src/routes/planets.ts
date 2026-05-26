@@ -1,6 +1,6 @@
 import express from "express";
 import {
-  getPlanets,
+  getAllPlanets,
   getPlanetById,
   getPlanetImage,
   // createPlanet,
@@ -10,7 +10,7 @@ import {
 
 const router = express.Router();
 
-router.get("/", getPlanets);
+router.get("/", getAllPlanets);
 router.get("/:id/image", getPlanetImage);
 router.get("/:id", getPlanetById);
 
