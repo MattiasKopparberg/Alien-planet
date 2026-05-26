@@ -7,6 +7,7 @@ export interface Planet {
   name: string;
   surface_area: number;
   avg_temp: number;
+  descr: string;
 }
 
 export interface Alien {
@@ -15,4 +16,5 @@ export interface Alien {
   aggression?: Aggression;
   habitat: Habitat;
   planet_id: number;
+  descr: string;
 }
