@@ -279,38 +279,106 @@ Emelie:
 ✅ - 
 
 
-### Sprint 1 review
+# Standup 2026-05-25 09:00-ca 10-00
+
+## Lisette
+
+### Har
+* Fetch-funktion för Aliens
+
+### Ska
+* Frontendmöte
+* få fram designsystem
+
+### Hinder
+* Noll
+
+## Emelie
+
+### Har
+* Fixat lite med Tailwind
+* lagt in basic färger och layout som kommer att ändras.
+* Kopplat ihop våra sidor med knappar och navbar.
+
+### Ska
+* Frontendmöte och få fram designsystem
+
+### Hinder
+* Inget
+
+## Mattias
+
+### Har
+* Gjort klart Alien endpoint
+
+### Ska
+* Göra klart Planet endpoint, merg:a PR
+* eve bugfixes eller error handling
+
+### Hinder
+* Inga hinder
+
+## Linnéa
+
+### Har
+* Skrivit grupplogg för 25/5
+* implementerat endpoint för alienbild
+* implementerat endpoint för planetbild
+
+### Ska
+* Ska evt lägga tid på bugfix i samband med att vi mergear
+* synka seed data med bilder, komplettera data m beskrivn.
+* prompta fram fler bilder för att komplettera data
+* Error handling middleware.
+
+### Hinder
+* Privata omständigheter
+
+### Har
+* Genererat Fallback bilder
+* lagt till dem om alien- eller planetbild inte kan laddas
+
+### Ska
+*  Sitta med Frontend och göra ett design system och wireframes
+* skriva loggboik
+
+### Hinder
+* Har möte på eftermiddagen och kommer inte vara tillgänglig efter kl 13
+
+## Rebecka
+
+# Sprint 1 review
 
 ## Ticket review
 
-# CORS
+### CORS
 Snabbt och smidigt, men fungerar ej i nuläget
 
-# Error handling middlware
+### Error handling middlware
 Mer detaljerad error handling, sepparat för dev miljö
 
-# Logga och styling av navbar
+### Logga och styling av navbar
 Gick bra, inga hinder
 
-# Planets och Aliens endpoints
+### Planets och Aliens endpoints
 Gick bra, liten spike för att kolla upp folder struktur
 
-# Synka mock data med bilder
+### Synka mock data med bilder
 Uppdaterade bilder för att matcha alien namn och standardisera bildnamn.
 
-# API länk för bild till planeter och aliens
+### API länk för bild till planeter och aliens
 Fungerar bra, CORS fortfarande blockar 
 
-# Fetch funktion
+### Fetch funktion
 Hemtar i nuläget mockdata, CORS behöver lösas innan databasen kan användas
 
-# Fallback bild frontend
+### Fallback bild frontend
 Fungerar och visas korrekt
 
-# Wireframe och prototyp klar i figma
+### Wireframe och prototyp klar i figma
 Disign dokument: https://www.figma.com/design/ZElW0NcOJJRJVzpnBP0aUw/Alien-Planets-design?node-id=0-1&p=f&t=UEFGNnc8yYIbCEIz-0
 
-# Startup script för hela appen
+### Startup script för hela appen
 NPM install i både frontend och backend, seed, och starta både frontend och backend server sammtidigt
 
 ### Kvar
@@ -354,7 +422,7 @@ CORS issues
 * ⭐ Samarbetet i gruppen
 * 🌈 Vore skönt att kunna fokusera helt på detta projektet i en avgränsad tidsrymd, svårt att switcha mellan detta och fördjupning
 
-### Vad fungerar bra som vi ska fortsätta med
+# Vad fungerar bra som vi ska fortsätta med
 
 * Ha högt i tak
 * Kommunicera
@@ -363,15 +431,15 @@ CORS issues
 * Interna samtal och arbetsgrupper (FE och BE team)
 * Bra balans mellan att sitta i grupp och ha möten och att jobba enskillt och koda
 
-### Vad ska vi sluta göra?
+# Vad ska vi sluta göra?
 * Jobba utan att fixa work item i kanban (rätt kolumn, assignee) board
 
 
-### Vad skulle vi kunna testa? (eller fortsätta testa)
+# Vad skulle vi kunna testa? (eller fortsätta testa)
 * Estimera tiden en ticker tar och gemföra med hur långt det faktiskt tog
 *  Timeboxa möten, sätt av en tid flr slut och respektera den
 
-### Vad ska vi göra härnäst?
+# Vad ska vi göra härnäst?
 
 * Se åvan
 * Planera sprint 2 på tisdag :D
