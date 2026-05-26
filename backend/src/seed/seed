@@ -11,8 +11,13 @@ CREATE TABLE planets (
 )
 
 INSERT INTO planets (name, surface_area, avg_temp) VALUES 
-('Mercury', 74.8, 167),
+('Hoth', 250, -60),
 ('Venus', 460.2, 464),
+('Arrakis', 300, 58),
+('Pandora', 95, 18),
+('Proxima-b', 120, -39),
+('Gliese-581g', 180, -12),
+('Mercury', 74.8, 167),
 ('Earth', 510.1, 15),
 ('Mars', 144.8, -65),
 ('Jupiter', 61420, -110),
@@ -20,12 +25,7 @@ INSERT INTO planets (name, surface_area, avg_temp) VALUES
 ('Uranus', 8083, -195),
 ('Neptune', 7618, -200),
 ('Kepler-22b', 900, 22),
-('Proxima-b', 120, -39),
-('Gliese-581g', 180, -12),
-('Pandora', 95, 18),
-('LV-426', 110, -45),
-('Arrakis', 300, 58),
-('Hoth', 250, -60);
+('LV-426', 110, -45);
 
 
 CREATE TABLE aliens (
@@ -38,23 +38,23 @@ CREATE TABLE aliens (
 );
 
 INSERT INTO aliens (species, aggression, habitat, planet_id) VALUES 
-('Zoltan Energy-Being', 'friendly', 'airborne', 3),
-('Europan Aqua-Fiend', 'hostile', 'water', 5),
-('Martian Microbe', 'friendly', 'surface', 4),
-('Gliese Ice-Crawler', 'neutral', 'surface', 11),
-('Cyberman', 'hostile', 'surface', 5),
-('Na vi', 'friendly', 'surface', 12),
-('ET', 'friendly', 'surface', 3),
-('Xenomorph', 'hostile', 'surface', 13),
-('Proxima Depth-Dweller', 'neutral', 'water', 10),
-('Grey', 'neutral', 'surface', 3),
-('Yautja', 'hostile', 'surface', 12),
-('Klingon Warrior', 'hostile', 'surface', 14),
-('Wampa', 'hostile', 'surface', 15),
-('Tauntaun', 'friendly', 'surface', 15),
-('Keplerian Glider', 'friendly', 'airborne', 9),
-('Mercurial Silicon-Mite', 'neutral', 'surface', 1),
+('Zoltan Energy-Being', 'friendly', 'airborne', 8),
+('Europan Aqua-Fiend', 'hostile', 'water', 11),
+('Martian Microbe', 'friendly', 'surface', 9),
+('Gliese Ice-Crawler', 'neutral', 'surface', 6),
+('Cyberman', 'hostile', 'surface', 11),
+('Na vi', 'friendly', 'surface', 4),
+('ET', 'friendly', 'surface', 8),
+('Xenomorph', 'hostile', 'surface', 15),
+('Proxima Depth-Dweller', 'neutral', 'water', 5),
+('Grey', 'neutral', 'surface', 8),
+('Yautja', 'hostile', 'surface', 3),
+('Klingon Warrior', 'hostile', 'surface', 3),
+('Wampa', 'hostile', 'surface', 1),
+('Tauntaun', 'friendly', 'surface', 1),
+('Keplerian Glider', 'friendly', 'airborne', 14),
+('Mercurial Silicon-Mite', 'neutral', 'surface', 7),
 ('Venusian Acid-Skiff', 'neutral', 'airborne', 2),
-('Titanium Aero-Whale', 'friendly', 'airborne', 6),
-('Uranian Vapor-Drifter', 'neutral', 'airborne', 7),
-('Neptunian Abyssal', 'hostile', 'water', 8);
+('Titanium Aero-Whale', 'friendly', 'airborne', 11),
+('Uranian Vapor-Drifter', 'neutral', 'airborne', 12),
+('Neptunian Abyssal', 'hostile', 'water', 13);
