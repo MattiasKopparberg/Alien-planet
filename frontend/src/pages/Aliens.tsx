@@ -3,6 +3,7 @@ import List from "../components/List";
 import type { Alien } from "../types/types";
 import "../App.css";
 
+
 const mockDataAliens: Alien[] = [
   {
     alien_id: 1,
@@ -22,8 +23,8 @@ const mockDataAliens: Alien[] = [
 
 export default function Aliens() {
   return (
-    <div className="text-light-purple">
-      <h1>Aliens</h1>
+    <div className="text-light-blue">
+      <h1 className="font-heading text-center text-magenta text-7xl py-2">Aliens</h1>
       <List
         items={mockDataAliens}
         renderItem={(item) => <AlienCard alien={item} />}

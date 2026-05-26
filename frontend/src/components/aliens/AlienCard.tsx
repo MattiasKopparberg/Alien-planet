@@ -3,7 +3,7 @@ import type { Alien } from "../../types/types";
 export default function AlienCard({ alien }: { alien: Alien }) {
   return (
     <div className="alien-card">
-      <img
+      <img className = "h-50 w-50 object-cover"
         src={`/images/aliens/${alien.alien_id}.png`}
         alt={alien.species}
         onError={(e) => {
