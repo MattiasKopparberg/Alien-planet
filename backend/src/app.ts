@@ -7,8 +7,8 @@ import { errorHandler } from "./middleware/errorHandler.js";
 export const app = express();
 
 app.use(express.json());
-app.use("/aliens", aliensRoute);
-app.use("/planets", planetsRoute);
+app.use("/api/aliens", aliensRoute);
+app.use("/api/planets", planetsRoute);
 
 app.use(notFound);
 app.use(errorHandler);
