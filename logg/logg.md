@@ -249,3 +249,5 @@ AlienCard visar en alien-placeholder och PlanetCard visar en planet-placeholder 
 Rebecka: ✅ - Implementerat fetch-funktion i api.ts för att hämta alla Aliens med felhantering. Skapade även custom hook useAliens som hämtar api-svaret och sparar i state samt error-state för felhantering. (1 1/2h ca) 
 
 Emelie:
+✅ - Länkat ihop sidor med knappar och navbar i App.tsx for now.
+✅ - Satte upp en basic styling med Tailwind.
