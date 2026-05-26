@@ -235,6 +235,7 @@ Mattias:
 ✅ Gemensamt script för back- och frontend (est 2h, faktiskt 2h 30m) (inkluderande spike) 
 
 Linnéa:  
+✅ Skapat templates för våra möten i fig-jam
 ✅ Grupplogg (est 30m, faktisk tid 45m)  
 ✅ Skapa api-länk för bild för specifik planet, med route + controller (felhantering, anropa model som i sin tur hämtar static file)  
 ✅ Skapa api-länk för bild för specifik planet, med route + controller (felhantering, anropa model som i sin tur hämtar static file)  
@@ -251,3 +252,28 @@ Rebecka: </br>
 Emelie:</br>
 ✅ - Länkat ihop sidor med knappar och navbar i App.tsx for now.</br>
 ✅ - Satte upp en basic styling med Tailwind.</br>
+
+## 2026-05-26
+
+*LISETTE LOGGAR FÖR STANDUP HÄR*
+
+*NÅGON ANNAN RETRO-LOGGAR HÄR*
+
+### Dagens jobb
+Mattias:  
+✅ -
+
+Linnéa (glömde både att estimera tid samt att kolla hur lång tid det tog):  
+✅ - Skapat templates för möten i fig-jam
+✅ - Uppdaterat seed data för att motsvara redan genererade bilder 
+✅ - Promptat fram nya bilder för återstående planeter och aliens enligt tidigare etablerad process, för att ha något att visa i appen 
+✅ - Middleware för error hantering + refaktorisera 404 till eget middleware 
+
+Lisette:  
+✅ - 
+
+Rebecka:  
+✅ - 
+
+Emelie:  
+✅ - 
