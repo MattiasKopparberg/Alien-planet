@@ -2,14 +2,16 @@ import express from "express";
 import {
   getPlanets,
   getPlanetById,
-  // getPlanetImage
+  getPlanetImage,
   // createPlanet,
   // updatePlanet,
   // deletePlanet,
 } from "../controller/planetsController.js";
 
-// const router = express.Router();
+const router = express.Router();
 
 router.get("/", getPlanets);
-// router.get("/:id/image", getPlanetImage)
+router.get("/:id/image", getPlanetImage);
 router.get("/:id", getPlanetById);
+
+export default router;
