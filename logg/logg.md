@@ -240,14 +240,14 @@ Linnéa:
 ✅ Skapa api-länk för bild för specifik planet, med route + controller (felhantering, anropa model som i sin tur hämtar static file)  
 (Est sammanlagt 2h för bildpunkterna, faktisk tid ca 2h)
 
-Lisette:
+Lisette:</br>
 ✅ - Genererat två fallback bilder ifall Alien- eller Planet bild inte kan laddas.
-
 ✅ - Impleterat fallbavk om backend inte kan leverera en bild ska ett placeholder-kort visas. 
 AlienCard visar en alien-placeholder och PlanetCard visar en planet-placeholder via onError på img-taggen. (1 h för båda punkter)
 
-Rebecka: ✅ - Implementerat fetch-funktion i api.ts för att hämta alla Aliens med felhantering. Skapade även custom hook useAliens som hämtar api-svaret och sparar i state samt error-state för felhantering. (1 1/2h ca) 
+Rebecka: </br>
+✅ - Implementerat fetch-funktion i api.ts för att hämta alla Aliens med felhantering. Skapade även custom hook useAliens som hämtar api-svaret och sparar i state samt error-state för felhantering. (1 1/2h ca) 
 
-Emelie:
-✅ - Länkat ihop sidor med knappar och navbar i App.tsx for now.
-✅ - Satte upp en basic styling med Tailwind.
+Emelie:</br>
+✅ - Länkat ihop sidor med knappar och navbar i App.tsx for now.</br>
+✅ - Satte upp en basic styling med Tailwind.</br>
