@@ -265,9 +265,9 @@ Mattias:
 
 Linnéa (glömde både att estimera tid samt att kolla hur lång tid det tog):  
 ✅ - Skapat templates för möten i fig-jam  
-✅ - Uppdaterat seed data för att motsvara redan genererade bilder 
-✅ - Promptat fram nya bilder för återstående planeter och aliens enligt tidigare etablerad process, för att ha något att visa i appen 
-✅ - Middleware för error hantering + refaktorisera 404 till eget middleware 
+✅ - Uppdaterat seed data för att motsvara redan genererade bilder  
+✅ - Promptat fram nya bilder för återstående planeter och aliens enligt tidigare etablerad process, för att ha något att visa i appen  
+✅ - Middleware för error hantering + refaktorisera 404 till eget middleware  
 
 Lisette:  
 ✅ - 
