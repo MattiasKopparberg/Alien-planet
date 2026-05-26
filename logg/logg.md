@@ -231,7 +231,7 @@ Sprint# - Arkiv för respektive sprint
 
 Mattias:
 ✅ Alien GET endpoint (est 2h, faktiskt 1h 45m)
-✅ Planet GET endpoint (est 1h)
+✅ Planet GET endpoint (est 1h faktiskt 30m)
 
 Linnéa:  
 ✅ Grupplogg (est 30m, faktisk tid 45m)  
