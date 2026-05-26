@@ -277,3 +277,101 @@ Rebecka:
 
 Emelie:  
 ✅ - 
+
+
+### Sprint 1 review
+
+## Ticket review
+
+# CORS
+Snabbt och smidigt, men fungerar ej i nuläget
+
+# Error handling middlware
+Mer detaljerad error handling, sepparat för dev miljö
+
+# Logga och styling av navbar
+Gick bra, inga hinder
+
+# Planets och Aliens endpoints
+Gick bra, liten spike för att kolla upp folder struktur
+
+# Synka mock data med bilder
+Uppdaterade bilder för att matcha alien namn och standardisera bildnamn.
+
+# API länk för bild till planeter och aliens
+Fungerar bra, CORS fortfarande blockar 
+
+# Fetch funktion
+Hemtar i nuläget mockdata, CORS behöver lösas innan databasen kan användas
+
+# Fallback bild frontend
+Fungerar och visas korrekt
+
+# Wireframe och prototyp klar i figma
+Disign dokument: https://www.figma.com/design/ZElW0NcOJJRJVzpnBP0aUw/Alien-Planets-design?node-id=0-1&p=f&t=UEFGNnc8yYIbCEIz-0
+
+# Startup script för hela appen
+NPM install i både frontend och backend, seed, och starta både frontend och backend server sammtidigt
+
+### Kvar
+90 fetch funktion för bildendpoint osv
+CORS issues
+
+
+### Agilt
+* Grupp log
+* Strukturera våra möten
+* Uppdelning i mindre grupper FE/BE
+* Kanban arbete med Epic - Feature - Wi
+* Interna möten i arbetsgrupper
+* Gemensam planering genom daily standups
+* Tidsestimering
+
+### 2 stars and a wish 
+
+# Mattias:
+* ⭐ Gruppen hanterar github projects jättebra, bra struktur
+* ⭐ Frånvaro kommuniceras och sköts på ett snyggt sätt, vi kan planera runt det
+* 🌈 Issues i rätt kolumn
+  
+# Emelie
+* ⭐ Bra kommunikation i gruppen
+* ⭐ Bra struktur på projektet, tydlighet
+* 🌈 Tydligheten kunde vara bättre avseende beslut, information har skett i flera kanaler
+  
+# Rebecka
+* ⭐ Gruppens kommunikation  funkar jättebra
+* ⭐ Högt i tak och förlåtande  miljö att lära sig i och “göra fel”
+* 🌈Gillar inte att lämna projekt halv klara, önskar att det fanns tid att göra klart.
+  
+# Linnéa
+* ⭐ Arbetsgrupperna funkar bra,  effektivt med olika roller/ansvar
+* ⭐ Stjärna till frontend för snygg design :D
+* 🌈 Kom ihåg att uppdatera kanban board med assignee och status
+  
+# Lisette
+* ⭐ Roligt att alla delar med sig av sina kunskaper och bidrar till gemensamt lärande
+* ⭐ Samarbetet i gruppen
+* 🌈 Vore skönt att kunna fokusera helt på detta projektet i en avgränsad tidsrymd, svårt att switcha mellan detta och fördjupning
+
+### Vad fungerar bra som vi ska fortsätta med
+
+* Ha högt i tak
+* Kommunicera
+* Gott samarbete
+* Epics/Features/work items - både planeringen och omsatt i kanban board
+* Interna samtal och arbetsgrupper (FE och BE team)
+* Bra balans mellan att sitta i grupp och ha möten och att jobba enskillt och koda
+
+### Vad ska vi sluta göra?
+* Jobba utan att fixa work item i kanban (rätt kolumn, assignee) board
+
+
+### Vad skulle vi kunna testa? (eller fortsätta testa)
+* Estimera tiden en ticker tar och gemföra med hur långt det faktiskt tog
+*  Timeboxa möten, sätt av en tid flr slut och respektera den
+
+### Vad ska vi göra härnäst?
+
+* Se åvan
+* Planera sprint 2 på tisdag :D
