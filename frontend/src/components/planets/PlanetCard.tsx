@@ -3,7 +3,7 @@ import type { Planet } from "../../types/types";
 export default function PlanetCard({ planet }: { planet: Planet }) {
   return (
     <div className="planet-card">
-      <img
+      <img className = "h-50 w-50 object-cover"
         src={`/images/planets/${planet.planet_id}.png`}
         alt={planet.name}
         onError={(e) => {

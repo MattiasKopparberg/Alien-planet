@@ -20,8 +20,8 @@ const mockDataPlanets: Planet[] = [
 
 export default function Planets() {
   return (
-    <div className="text-light-purple">
-      <h1>Planets</h1>
+    <div className="text-light-blue flex-col justify-center align-center">
+      <h1 className="font-heading text-center text-magenta text-7xl py-2">Planets</h1>
       {/* renderItem skickas till List och skapar ett PlanetCard per planet-objekt */}
       <List
         items={mockDataPlanets}
