@@ -274,7 +274,9 @@ Lisette:
 
 
 Rebecka:  
-✅ - 
+✅ - Frontendmöte halva dagen för att gemensamt få fram designdokument
+✅ - Styling av navbar och implementerade loggan
+✅ - Försökte testköra endpoints för aliens, fungerar inte än - fortsättning nästa vecka 
 
 Emelie:  
 ✅ - 
