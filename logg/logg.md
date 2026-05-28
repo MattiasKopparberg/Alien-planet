@@ -235,27 +235,27 @@ Mattias:
 ✅ Gemensamt script för back- och frontend (est 2h, faktiskt 2h 30m) (inkluderande spike) 
 
 Linnéa:  
-✅ Skapat templates för våra möten i fig-jam
+✅ Skapat templates för våra möten i fig-jam  
 ✅ Grupplogg (est 30m, faktisk tid 45m)  
 ✅ Skapa api-länk för bild för specifik planet, med route + controller (felhantering, anropa model som i sin tur hämtar static file)  
 ✅ Skapa api-länk för bild för specifik planet, med route + controller (felhantering, anropa model som i sin tur hämtar static file)  
 (Est sammanlagt 2h för bildpunkterna, faktisk tid ca 2h)
 
-Lisette:</br>
-✅ - Genererat två fallback bilder ifall Alien- eller Planet bild inte kan laddas.
-✅ - Impleterat fallbavk om backend inte kan leverera en bild ska ett placeholder-kort visas. 
-AlienCard visar en alien-placeholder och PlanetCard visar en planet-placeholder via onError på img-taggen. (1 h för båda punkter)
+Lisette:  
+✅ - Genererat två fallback bilder ifall Alien- eller Planet bild inte kan laddas.  
+✅ - Impleterat fallbavk om backend inte kan leverera en bild ska ett placeholder-kort visas.
+AlienCard visar en alien-placeholder och PlanetCard visar en planet-placeholder via onError på img-taggen. (1 h för båda punkter)  
 
-Rebecka: </br>
+Rebecka:  
 ✅ - Implementerat fetch-funktion i api.ts för att hämta alla Aliens med felhantering. Skapade även custom hook useAliens som hämtar api-svaret och sparar i state samt error-state för felhantering. (1 1/2h ca) 
 
-Emelie:</br>
-✅ - Länkat ihop sidor med knappar och navbar i App.tsx for now.</br>
-✅ - Satte upp en basic styling med Tailwind.</br>
+Emelie:  
+✅ - Länkat ihop sidor med knappar och navbar i App.tsx for now.  
+✅ - Satte upp en basic styling med Tailwind.  
 
 ## 2026-05-26
 
-*MATTIAS LOGGAR IAG*
+*MATTIAS LOGGAR IDAG*
 
 ### Dagens jobb
 Mattias:  
@@ -268,18 +268,20 @@ Linnéa (glömde både att estimera tid samt att kolla hur lång tid det tog):
 ✅ - Middleware för error hantering + refaktorisera 404 till eget middleware  
 
 Lisette:  
-✅ - Haft möte med frontend hela förmiddagen gällande design
-✅ - Skapat dsignsystem
-✅  - Gjort wireframes/protoyper
+✅ - Haft möte med frontend hela förmiddagen gällande design  
+✅ - Skapat dsignsystem  
+✅ - Gjort wireframes/protoyper  
 
 
 Rebecka:  
-✅ - Frontendmöte halva dagen för att gemensamt få fram designdokument
-✅ - Styling av navbar och implementerade loggan
-✅ - Försökte testköra endpoints för aliens, fungerar inte än - fortsättning nästa vecka 
+✅ - Frontendmöte halva dagen för att gemensamt få fram designdokument  
+✅ - Styling av navbar och implementerade loggan  
+✅ - Försökte testköra endpoints för aliens, fungerar inte än - fortsättning nästa vecka  
 
 Emelie:  
-✅ - 
+✅ - Frontendmöte på förmiddagen för att få fram ett designdokument  
+✅ - Lade in bestämda typsnitt och färger i vårt projekt och stylade med dessa.  
+✅ - Byggde en statisk modal för att öppna detaljvyn för Aliens och Planets.  
 
 
 # Standup 2026-05-25 09:00-ca 10-00
