@@ -3,6 +3,7 @@ import {
   getAllPlanets,
   getPlanetById,
   getPlanetImage,
+  getPlanetInhabitants,
   // createPlanet,
   // updatePlanet,
   // deletePlanet,
@@ -13,5 +14,6 @@ const router = express.Router();
 router.get("/", getAllPlanets);
 router.get("/:id/image", getPlanetImage);
 router.get("/:id", getPlanetById);
+router.get("/:id/aliens", getPlanetInhabitants);
 
 export default router;
