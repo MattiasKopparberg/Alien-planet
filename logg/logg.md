@@ -477,9 +477,9 @@ CORS issues
 - ✅ Stylast Listan för att visa Aliens och Planets  
 - ✅ Stylat AlienCard och PlanetCard  
 
-**Rebecka:**
-**Emelie:**
-**Linnea:**
+**Rebecka:**  
+**Emelie:**  
+**Linnea:**  
 - ✅ Endpoint som returnerar aliens som bor på en specifik planet (routing, controller, service, model)   
 - ✅ Planerat för deploy, inkl hitta och välja tjänster  
 - ✅ DB på Aiven, free tier mySQL  
