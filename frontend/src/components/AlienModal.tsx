@@ -16,8 +16,8 @@ export default function AlienModal() {
         />
         <div className="flex-col">
           <h2 className="font-subheading mb-3 text-xl">Alien Species</h2>
-          <p className="font-paragraph">Aggression: Aggression Type</p>
-          <p className="font-paragraph">Habitat: Alien Habitat</p>
+          <p className="font-paragraph"><span className="font-bold">Aggression: </span>Aggression Type</p>
+          <p className="font-paragraph"><span className="font-bold">Habitat: </span>Habitat Type</p>
         </div>
       </div>
       <p className="font-paragraph mt-3">

@@ -14,12 +14,12 @@ export default function PlanetModal() {
         />
         <div className="flex-col">
           <h2 className="font-subheading mb-3 text-xl">Planet Name</h2>
-          <p className="font-paragraph">Surface Area: Area</p>
-          <p className="font-paragraph">Habitat: Alien Habitat</p>
+          <p className="font-paragraph"><span className="font-bold">Surface Area: </span>Area</p>
+           <p className="font-paragraph"><span className="font-bold">Avg temperature: </span> 0°C</p>
         </div>
       </div>
       <p className="font-paragraph mt-3">
-        Alien Description. Lorem ipsum dolor sit amet, consectetur adipiscing
+        Planet Description. Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Suspendisse molestie ligula eu felis mattis ultrices. Nullam vel
         scelerisque lectus, at gravida nisi. Lorem ipsum dolor sit amet,
         consectetur adipiscing elit.{" "}
