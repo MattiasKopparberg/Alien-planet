@@ -454,11 +454,18 @@ CORS issues
   ### Sprint 2 planering 9-9.30 ,(paus för lektion) Sen satt vi igen 10.15 - 11.30
 
 *LISETTE LOGGAR IDAG*
-* Vi inledde dagen med att gå igenom eftersläp från föregående sprint. 
-* Därefter bröt vi ner features i konkreta work items.
-* Efter en lektionspaus städade vi upp backloggen, vilket var behövligt.
-* När work items var klara gick vi över till tidsestimering och fördelning. 
-Vi märker att FE bär en tyngre last i slutet – backend planerar att avlasta.
+ Vi inledde dagen med att gå igenom eftersläp från föregående sprint.   
+ Därefter bröt vi ner features i konkreta work items.  
+ Efter en lektionspaus städade vi upp backloggen, vilket var behövligt.  
+ 
+ När work items var klara gick vi över till tidsestimering och fördelning.   
+ Vi märker att FE bär en tyngre last i slutet – backend planerar att avlasta.  
+
+ ![Sprint 2 planering](./img/sprint2_figjam.png)
+
+![Sprint 2 planering 2](./img/sprint2_figjam2.png)
+
+![Mål](./img/mål_figjam.png)
 
 ### Dagens jobb
 
