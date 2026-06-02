@@ -480,3 +480,10 @@ CORS issues
 **Rebecka:**
 **Emelie:**
 **Linnea:**
+- ✅ Endpoint som returnerar aliens som bor på en specifik planet (routing, controller, service, model)   
+- ✅ Planerat för deploy, inkl hitta och välja tjänster  
+- ✅ DB på Aiven, free tier mySQL  
+- ✅ Backend live på Render  
+- ✅ Frontend live på Render  
+- ✅ Koppling mellan live DB och Backend  
+   
