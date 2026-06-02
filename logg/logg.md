@@ -478,7 +478,13 @@ CORS issues
 - ✅ Stylat AlienCard och PlanetCard  
 
 **Rebecka:**  
+
 **Emelie:**  
+- ✅ Sprint 2 planering på förmiddagen  
+- ✅ Suttit med frontend och gjort några slutgiltliga designbeslut
+- ✅ Skapat wireframes för responsiva lägen i Figma med enkel design
+- ✅ Modifierat Aliens och Planetmodal så att textfält stämmer överens med API  
+
 **Linnea:**  
 - ✅ Endpoint som returnerar aliens som bor på en specifik planet (routing, controller, service, model)   
 - ✅ Planerat för deploy, inkl hitta och välja tjänster  
