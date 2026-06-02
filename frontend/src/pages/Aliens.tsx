@@ -12,6 +12,12 @@ export default function Aliens() {
     <div>
       <h1>Aliens</h1>
       <List items={aliens} renderItem={(item) => <AlienCard alien={item} />} />
+    <div className="text-light-blue">
+      <h1 className="font-heading text-center text-magenta text-7xl py-2">Aliens</h1>
+      <List
+        items={mockDataAliens}
+        renderItem={(item) => <AlienCard alien={item} />}
+      />
     </div>
   );
 }

@@ -235,29 +235,27 @@ Mattias:
 ✅ Gemensamt script för back- och frontend (est 2h, faktiskt 2h 30m) (inkluderande spike) 
 
 Linnéa:  
-✅ Skapat templates för våra möten i fig-jam
+✅ Skapat templates för våra möten i fig-jam  
 ✅ Grupplogg (est 30m, faktisk tid 45m)  
 ✅ Skapa api-länk för bild för specifik planet, med route + controller (felhantering, anropa model som i sin tur hämtar static file)  
 ✅ Skapa api-länk för bild för specifik planet, med route + controller (felhantering, anropa model som i sin tur hämtar static file)  
 (Est sammanlagt 2h för bildpunkterna, faktisk tid ca 2h)
 
-Lisette:</br>
-✅ - Genererat två fallback bilder ifall Alien- eller Planet bild inte kan laddas.
-✅ - Impleterat fallbavk om backend inte kan leverera en bild ska ett placeholder-kort visas. 
-AlienCard visar en alien-placeholder och PlanetCard visar en planet-placeholder via onError på img-taggen. (1 h för båda punkter)
+Lisette:  
+✅ - Genererat två fallback bilder ifall Alien- eller Planet bild inte kan laddas.  
+✅ - Impleterat fallbavk om backend inte kan leverera en bild ska ett placeholder-kort visas.
+AlienCard visar en alien-placeholder och PlanetCard visar en planet-placeholder via onError på img-taggen. (1 h för båda punkter)  
 
-Rebecka: </br>
+Rebecka:  
 ✅ - Implementerat fetch-funktion i api.ts för att hämta alla Aliens med felhantering. Skapade även custom hook useAliens som hämtar api-svaret och sparar i state samt error-state för felhantering. (1 1/2h ca) 
 
-Emelie:</br>
-✅ - Länkat ihop sidor med knappar och navbar i App.tsx for now.</br>
-✅ - Satte upp en basic styling med Tailwind.</br>
+Emelie:  
+✅ - Länkat ihop sidor med knappar och navbar i App.tsx for now.  
+✅ - Satte upp en basic styling med Tailwind.  
 
 ## 2026-05-26
 
-*LISETTE LOGGAR FÖR STANDUP HÄR*
-
-*NÅGON ANNAN RETRO-LOGGAR HÄR*
+*MATTIAS LOGGAR IDAG*
 
 ### Dagens jobb
 Mattias:  
@@ -270,10 +268,183 @@ Linnéa (glömde både att estimera tid samt att kolla hur lång tid det tog):
 ✅ - Middleware för error hantering + refaktorisera 404 till eget middleware  
 
 Lisette:  
-✅ - 
+✅ - Haft möte med frontend hela förmiddagen gällande design  
+✅ - Skapat dsignsystem  
+✅ - Gjort wireframes/protoyper  
+
 
 Rebecka:  
-✅ - 
+✅ - Frontendmöte halva dagen för att gemensamt få fram designdokument  
+✅ - Styling av navbar och implementerade loggan  
+✅ - Försökte testköra endpoints för aliens, fungerar inte än - fortsättning nästa vecka  
 
 Emelie:  
-✅ - 
+✅ - Frontendmöte på förmiddagen för att få fram ett designdokument  
+✅ - Lade in bestämda typsnitt och färger i vårt projekt och stylade med dessa.  
+✅ - Byggde en statisk modal för att öppna detaljvyn för Aliens och Planets.  
+
+
+# Standup 2026-05-25 09:00-ca 10-00
+
+## Lisette
+
+### Har
+* Fetch-funktion för Aliens
+
+### Ska
+* Frontendmöte
+* få fram designsystem
+
+### Hinder
+* Noll
+
+## Emelie
+
+### Har
+* Fixat lite med Tailwind
+* lagt in basic färger och layout som kommer att ändras.
+* Kopplat ihop våra sidor med knappar och navbar.
+
+### Ska
+* Frontendmöte och få fram designsystem
+
+### Hinder
+* Inget
+
+## Mattias
+
+### Har
+* Gjort klart Alien endpoint
+
+### Ska
+* Göra klart Planet endpoint, merg:a PR
+* eve bugfixes eller error handling
+
+### Hinder
+* Inga hinder
+
+## Linnéa
+
+### Har
+* Skrivit grupplogg för 25/5
+* implementerat endpoint för alienbild
+* implementerat endpoint för planetbild
+
+### Ska
+* Ska evt lägga tid på bugfix i samband med att vi mergear
+* synka seed data med bilder, komplettera data m beskrivn.
+* prompta fram fler bilder för att komplettera data
+* Error handling middleware.
+
+### Hinder
+* Privata omständigheter
+
+### Har
+* Genererat Fallback bilder
+* lagt till dem om alien- eller planetbild inte kan laddas
+
+### Ska
+*  Sitta med Frontend och göra ett design system och wireframes
+* skriva loggboik
+
+### Hinder
+* Har möte på eftermiddagen och kommer inte vara tillgänglig efter kl 13
+
+## Rebecka
+
+# Sprint 1 review
+
+## Ticket review
+
+### CORS
+Snabbt och smidigt, men fungerar ej i nuläget
+
+### Error handling middlware
+Mer detaljerad error handling, sepparat för dev miljö
+
+### Logga och styling av navbar
+Gick bra, inga hinder
+
+### Planets och Aliens endpoints
+Gick bra, liten spike för att kolla upp folder struktur
+
+### Synka mock data med bilder
+Uppdaterade bilder för att matcha alien namn och standardisera bildnamn.
+
+### API länk för bild till planeter och aliens
+Fungerar bra, CORS fortfarande blockar 
+
+### Fetch funktion
+Hemtar i nuläget mockdata, CORS behöver lösas innan databasen kan användas
+
+### Fallback bild frontend
+Fungerar och visas korrekt
+
+### Wireframe och prototyp klar i figma
+Disign dokument: https://www.figma.com/design/ZElW0NcOJJRJVzpnBP0aUw/Alien-Planets-design?node-id=0-1&p=f&t=UEFGNnc8yYIbCEIz-0
+
+### Startup script för hela appen
+NPM install i både frontend och backend, seed, och starta både frontend och backend server sammtidigt
+
+### Kvar
+90 fetch funktion för bildendpoint osv
+CORS issues
+
+
+### Agilt
+* Grupp log
+* Strukturera våra möten
+* Uppdelning i mindre grupper FE/BE
+* Kanban arbete med Epic - Feature - Wi
+* Interna möten i arbetsgrupper
+* Gemensam planering genom daily standups
+* Tidsestimering
+
+### 2 stars and a wish 
+
+# Mattias:
+* ⭐ Gruppen hanterar github projects jättebra, bra struktur
+* ⭐ Frånvaro kommuniceras och sköts på ett snyggt sätt, vi kan planera runt det
+* 🌈 Issues i rätt kolumn
+  
+# Emelie
+* ⭐ Bra kommunikation i gruppen
+* ⭐ Bra struktur på projektet, tydlighet
+* 🌈 Tydligheten kunde vara bättre avseende beslut, information har skett i flera kanaler
+  
+# Rebecka
+* ⭐ Gruppens kommunikation  funkar jättebra
+* ⭐ Högt i tak och förlåtande  miljö att lära sig i och “göra fel”
+* 🌈Gillar inte att lämna projekt halv klara, önskar att det fanns tid att göra klart.
+  
+# Linnéa
+* ⭐ Arbetsgrupperna funkar bra,  effektivt med olika roller/ansvar
+* ⭐ Stjärna till frontend för snygg design :D
+* 🌈 Kom ihåg att uppdatera kanban board med assignee och status
+  
+# Lisette
+* ⭐ Roligt att alla delar med sig av sina kunskaper och bidrar till gemensamt lärande
+* ⭐ Samarbetet i gruppen
+* 🌈 Vore skönt att kunna fokusera helt på detta projektet i en avgränsad tidsrymd, svårt att switcha mellan detta och fördjupning
+
+# Vad fungerar bra som vi ska fortsätta med
+
+* Ha högt i tak
+* Kommunicera
+* Gott samarbete
+* Epics/Features/work items - både planeringen och omsatt i kanban board
+* Interna samtal och arbetsgrupper (FE och BE team)
+* Bra balans mellan att sitta i grupp och ha möten och att jobba enskillt och koda
+
+# Vad ska vi sluta göra?
+* Jobba utan att fixa work item i kanban (rätt kolumn, assignee) board
+
+
+# Vad skulle vi kunna testa? (eller fortsätta testa)
+* Estimera tiden en ticker tar och gemföra med hur långt det faktiskt tog
+*  Timeboxa möten, sätt av en tid flr slut och respektera den
+
+# Vad ska vi göra härnäst?
+
+* Se åvan
+* Planera sprint 2 på tisdag :D
