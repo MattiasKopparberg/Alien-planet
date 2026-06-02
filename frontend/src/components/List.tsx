@@ -6,7 +6,10 @@ interface ListProps<T> {
 
 export default function List<T>({ items, renderItem }: ListProps<T>) {
   return (
-    <ul>
+    <ul
+      className="grid grid-cols-4 gap-6 px-30
+     py-20 justify-items-center"
+    >
       {/* loopar igenom arrayen, anropar renderItem med ett planet/alien-objekt och renderar ett Card */}
       {items.map((item, index) => (
         <li key={index}>{renderItem(item)}</li>
