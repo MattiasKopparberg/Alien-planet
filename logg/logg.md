@@ -448,3 +448,28 @@ CORS issues
 
 * Se åvan
 * Planera sprint 2 på tisdag :D
+
+  ## 2026-06-02
+
+  ### Sprint 2 planering 9-9.30 ,(paus för lektion) Sen satt vi igen 10.15 - 11.30
+
+*LISETTE LOGGAR IDAG*
+* Vi inledde dagen med att gå igenom eftersläp från föregående sprint. 
+* Därefter bröt vi ner features i konkreta work items.
+* Efter en lektionspaus städade vi upp backloggen, vilket var behövligt.
+* När work items var klara gick vi över till tidsestimering och fördelning. 
+Vi märker att FE bär en tyngre last i slutet – backend planerar att avlasta.
+
+### Dagens jobb
+
+**Mattias:**
+
+**Lisette:**
+- ✅ Sprint 2 planering på förmiddagen  
+- ✅ Suttit med frontend och gjort några slutgiltliga designbeslut  
+- ✅ Stylast Listan för att visa Aliens och Planets  
+- ✅ Stylat AlienCard och PlanetCard  
+
+**Rebecka:**
+**Emelie:**
+**Linnea:**
