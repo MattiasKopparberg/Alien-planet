@@ -8,7 +8,14 @@ export const getAllAliens = async (
   next: NextFunction,
 ): Promise<void> => {
   try {
-    const aliens = await alienService.getAllAliens();
+    const aggression = req.query.aggression as string | undefined;
+    const habitat = req.query.habitat as string | undefined;
+    
+
+    const aliens = await alienService.getAllAliens(
+      aggression,
+      habitat,
+    );
     res.status(200).json(aliens);
   } catch (err) {
     next(err);
@@ -67,3 +74,5 @@ export const getAlienImage = async (
     next(e);
   }
 };
+
+

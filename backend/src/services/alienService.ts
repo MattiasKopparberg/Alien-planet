@@ -1,9 +1,15 @@
 import * as alienModel from "../models/alienModel.js"
 import type { Alien, Aggression } from "../types/types.js"
 
-export const getAllAliens = async (): Promise<Alien[]> => {
-    return await alienModel.findAllAliens();
-}
+export const getAllAliens = async (
+  aggression?: string,
+  habitat?: string,
+): Promise<Alien[]> => {
+  return await alienModel.findAllAliens({
+    aggression,
+    habitat,
+  });
+};
 
 export const getAlienById = async (
   id: number,

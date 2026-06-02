@@ -18,3 +18,9 @@ export interface Alien {
   planet_id: number;
   descr?: string;
 }
+
+
+export interface AlienFilters {
+  aggression?: Aggression;
+  habitat?: Habitat;
+}
