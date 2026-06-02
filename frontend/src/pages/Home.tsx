@@ -12,7 +12,11 @@ export default function Home() {
     >
       <h1 className="font-heading text-magenta text-7xl py-2">Alien Planets</h1>
       <h2 className="font-paragraph text-light-blue text-lg py-3 text-center w-4xl">
-        Embark on an interstellar journey across the cosmos. This platform lets you touch down on distant planets, scan their unique environments, and catalog the fascinating civilizations and creatures that call them home. Step into the shoes of a space explorer and begin your deep-space discovery.
+        Embark on an interstellar journey across the cosmos. This platform lets
+        you touch down on distant planets, scan their unique environments, and
+        catalog the fascinating civilizations and creatures that call them home.
+        Step into the shoes of a space explorer and begin your deep-space
+        discovery.
       </h2>
       <div className="flex gap-5 m-5">
         <Link to="/Planets">
@@ -26,8 +30,8 @@ export default function Home() {
           </button>
         </Link>
       </div>
-      <AlienModal/>
-      <PlanetModal/>
+      <AlienModal />
+      <PlanetModal />
     </div>
   );
 }
