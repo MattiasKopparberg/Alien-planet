@@ -3,13 +3,13 @@ import "../App.css";
 import heroImg from "../assets/images/hero-img.jpg";
 import AlienModal from "../components/AlienModal";
 import PlanetModal from "../components/PlanetModal";
+import LoadingSpinner from "../components/loading/LoadingSpinner";
 
 export default function Home() {
   return (
     <div
       className="min-h-screen flex flex-col items-center justify-center pt-20"
-      style={{ backgroundImage: `url(${heroImg})`, backgroundSize: "cover" }}
-    >
+      style={{ backgroundImage: `url(${heroImg})`, backgroundSize: "cover" }}>
       <h1 className="font-heading text-magenta text-7xl py-2">Alien Planets</h1>
       <h2 className="font-paragraph text-light-blue text-lg py-3 text-center w-4xl">
         Embark on an interstellar journey across the cosmos. This platform lets
