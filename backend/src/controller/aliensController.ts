@@ -1,5 +1,6 @@
 import * as alienService from "../services/alienService.js";
 import type { Request, Response, NextFunction } from "express";
+import type { Aggression, Habitat } from "../types/types.js";
 import { join } from "node:path";
 
 export const getAllAliens = async (
@@ -8,14 +9,10 @@ export const getAllAliens = async (
   next: NextFunction,
 ): Promise<void> => {
   try {
-    const aggression = req.query.aggression as string | undefined;
-    const habitat = req.query.habitat as string | undefined;
-    
+    const aggression = req.query.aggression as Aggression;
+    const habitat = req.query.habitat as Habitat;
 
-    const aliens = await alienService.getAllAliens(
-      aggression,
-      habitat,
-    );
+    const aliens = await alienService.getAllAliens(aggression, habitat);
     res.status(200).json(aliens);
   } catch (err) {
     next(err);
@@ -74,5 +71,3 @@ export const getAlienImage = async (
     next(e);
   }
 };
-
-
