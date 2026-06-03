@@ -1,13 +1,19 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import "../App.css";
 import heroImg from "../assets/images/hero-img.jpg";
 
 export default function Home() {
+  //The useEffect below is there to trigger the sleeping free tier backend on mount
+  useEffect(() => {
+    fetch("https://alienplanet.onrender.com/api/").catch((error) =>
+      console.error("Failed to wake up server:", error),
+    );
+  }, []);
   return (
     <div
       className="relative min-h-screen flex flex-col items-center justify-center before:absolute before:inset-0 before:bg-black/20 px-6 overflow-x-hidden"
-      style={{ backgroundImage: `url(${heroImg})`, backgroundSize: "cover" }}
-    >
+      style={{ backgroundImage: `url(${heroImg})`, backgroundSize: "cover" }}>
       {/* glass box */}
       <div className="relative z-10 flex flex-col items-center backdrop-blur-sm bg-white/3 border border-white/10 rounded-2xl px-4 sm:px-10 py-8 w-full max-w-3xl text-center mx-auto">
         <h1 className="font-heading heading-alien text-magenta text-4xl sm:text-5xl lg:text-6xl py-2">

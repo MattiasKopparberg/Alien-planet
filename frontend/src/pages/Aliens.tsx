@@ -4,10 +4,11 @@ import List from "../components/List";
 import "../App.css";
 import { useAliens } from "../hooks/useAliens";
 import { usePlanets } from "../hooks/usePlanets";
+import LoadingSpinner from "../components/loading/LoadingSpinner";
 import AlienFilterBar from "../components/aliens/AlienFilterBar";
 
 export default function Aliens() {
-  const { aliens, error } = useAliens();
+  const { aliens, error, isLoading } = useAliens();
   const { planets } = usePlanets();
   const [selectedAggression, setSelectedAggression] = useState<string[]>([]);
   const [selectedHabitat, setSelectedHabitat] = useState<string[]>([]);
@@ -45,7 +46,9 @@ export default function Aliens() {
   if (error) return <p>{error}</p>;
   return (
     <div className="text-light-blue pt-28">
-      <h1 className="font-heading text-center heading-alien text-7xl py-2">Aliens</h1>
+      <h1 className="font-heading text-center heading-alien text-7xl py-2">
+        Aliens
+      </h1>
       <AlienFilterBar
         selectedAggression={selectedAggression}
         onToggleAggression={toggleAggression}
@@ -55,10 +58,19 @@ export default function Aliens() {
         selectedPlanet={selectedPlanet}
         onChangePlanet={setSelectedPlanet}
       />
-      <List
-        items={filtered}
-        renderItem={(item) => <AlienCard alien={item} />}
-      />
+      {isLoading ? (
+        <>
+          <h2 className="font-paragraph text-light-blue text-lg py-3 text-center w-full">
+            Aliens are loading..
+          </h2>
+          <LoadingSpinner size="s" />
+        </>
+      ) : (
+        <List
+          items={filtered}
+          renderItem={(item) => <AlienCard alien={item} />}
+        />
+      )}
     </div>
   );
 }
