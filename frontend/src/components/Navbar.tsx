@@ -12,7 +12,9 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-5 py-1">
-      <img src={logo} alt="logo" className="w-20 h-20" />
+      <Link to="/">
+        <img src={logo} alt="logo" className="w-20 h-20" />
+      </Link>
 
       <button
         onClick={toggleMenu}
