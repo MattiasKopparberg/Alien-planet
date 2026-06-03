@@ -620,6 +620,12 @@ Gick igenom alla tasks en och en och kontrollerade om de var färdiga eller beh�
 
 **Linnéa:**
 
+- ✅ Frontend läser från deployad backend
+- ✅ Spinner/loading component 
+- ✅ Loading state i datahämtningshooks
+- ✅ Loading visas för aliens / planets i resp. component
+- ✅ Bugfix med Mattias i backenden, typescriptfel och mergeknas
+  
 **Lisette:**
 
 **Emelie:**
