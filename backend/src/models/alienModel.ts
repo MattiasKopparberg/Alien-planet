@@ -1,14 +1,35 @@
 import { query } from "../config/db.js";
-import type { Alien, Aggression } from "../types/types.js";
+import type { Alien, Aggression, AlienFilters } from "../types/types.js";
 
-export const findAllAliens = async () => {
+export const findAllAliens = async (
+  filters: AlienFilters = {},
+): Promise<Alien[]> => {
   try {
-    const aliens = (await query(
-      "SELECT * FROM aliens ORDER BY alien_id",
-    )) as Alien[];
+    let sql = "SELECT * FROM aliens";
+    const values: any[] = [];
+    const conditions: string[] = [];
+
+    if (filters.aggression) {
+      values.push(filters.aggression);
+      conditions.push(`aggression = ?`);
+    }
+
+    if (filters.habitat) {
+      values.push(filters.habitat);
+      conditions.push(`habitat = ?`);
+    }
+
+    if (conditions.length > 0) {
+      sql += " WHERE " + conditions.join(" AND ");
+    }
+
+    sql += " ORDER BY alien_id";
+
+    const aliens = (await query(sql, values)) as Alien[];
+
     return aliens;
   } catch (e) {
-    console.error("Query failed in findAllAliens: ", e);
+    console.error("Query failed in findAllAliens:", e);
     throw e;
   }
 };
