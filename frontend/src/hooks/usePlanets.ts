@@ -5,6 +5,7 @@ import { getAllPlanets } from "../services/planetsApi";
 export function usePlanets() {
   const [planets, setPlanets] = useState<Planet[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   // fetches all planets on mount, sets error state if fetch fails
   useEffect(() => {
@@ -12,6 +13,7 @@ export function usePlanets() {
       try {
         const data = await getAllPlanets();
         setPlanets(data);
+        setIsLoading(false);
       } catch {
         setError("Something went wrong, could not fetch planets");
       }
@@ -20,5 +22,5 @@ export function usePlanets() {
     fetchPlanets();
   }, []);
 
-  return { planets, error };
+  return { planets, error, isLoading };
 }
