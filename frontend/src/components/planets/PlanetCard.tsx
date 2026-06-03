@@ -7,7 +7,7 @@ interface Props {
 
 export default function PlanetCard({ planet, onClick }: Props) {
   return (
-    <div className="relative rounded-xl shadow-planet overflow-hidden w-61.25 h-54"
+    <div className="relative rounded-xl shadow-planet overflow-hidden w-61.25 h-54 cursor-pointer"
     onClick={onClick}>
       <img
         className="w-full h-full object-cover"
