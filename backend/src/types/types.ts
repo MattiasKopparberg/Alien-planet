@@ -25,9 +25,9 @@ export interface AlienFilters {
 }
 
 export interface PlanetFilters {
-  name?: string;
-  min_temp?: number;
-  max_temp?: number;
-  min_surface?: number;
-  max_surface?: number;
+  name?: string | undefined;
+  min_temp?: number | undefined;
+  max_temp?: number | undefined;
+  min_surface?: number | undefined;
+  max_surface?: number | undefined;
 }
