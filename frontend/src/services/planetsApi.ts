@@ -2,7 +2,9 @@ import type { Planet } from "../types/types";
 
 export async function getAllPlanets(): Promise<Planet[]> {
   try {
-    const response = await fetch("http://localhost:3000/api/planets");
+    const response = await fetch(
+      "https://alienplanet.onrender.com/api/planets",
+    );
     if (!response.ok) {
       throw new Error("Could not fetch planets");
     }
