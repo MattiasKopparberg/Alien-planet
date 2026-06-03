@@ -470,6 +470,8 @@ CORS issues
 ### Dagens jobb
 
 **Mattias:**
+- ✅ Sprint 2 planering på förmiddagen
+- ✅ Alien filtering endpoint
 
 **Lisette:**
 - ✅ Sprint 2 planering på förmiddagen  
