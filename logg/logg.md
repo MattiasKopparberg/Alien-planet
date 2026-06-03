@@ -478,6 +478,10 @@ CORS issues
 - ✅ Stylat AlienCard och PlanetCard  
 
 **Rebecka:**  
+- ✅ Sprint 2 planering på förmiddagen
+- ✅ Suttit med frontend och gjort några slutgiltliga designbeslut
+- ✅ Fixat fetch-funktionalitet till planets
+- ✅ Bilder till både planets och aliens 
 
 **Emelie:**  
 - ✅ Sprint 2 planering på förmiddagen  
