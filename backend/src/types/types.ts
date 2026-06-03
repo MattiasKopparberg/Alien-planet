@@ -18,3 +18,16 @@ export interface Alien {
   planet_id: number;
   descr?: string;
 }
+
+export interface AlienFilters {
+  aggression?: Aggression;
+  habitat?: Habitat;
+}
+
+export interface PlanetFilters {
+  name?: string;
+  min_temp?: number;
+  max_temp?: number;
+  min_surface?: number;
+  max_surface?: number;
+}

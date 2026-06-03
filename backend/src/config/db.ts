@@ -15,7 +15,7 @@ const dbConfig: mysql.PoolOptions = {
 
 export const db = mysql.createPool(dbConfig);
 
-export const query = async <T extends RowDataPacket[]>(
+export const query = async <T>(
   sql: string,
   params?: any[],
 ): Promise<T> => {
