@@ -13,7 +13,7 @@ export const db = mysql.createPool({
   queueLimit: 0,
 });
 
-export const query = async <T extends RowDataPacket[]>(
+export const query = async <T>(
   sql: string,
   params?: any[],
 ): Promise<T> => {

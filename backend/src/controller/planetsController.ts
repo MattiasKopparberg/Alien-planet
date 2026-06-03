@@ -1,4 +1,5 @@
 import type { Request, Response, NextFunction } from "express";
+import type { PlanetFilters } from "../types/types.js";
 import { join } from "node:path";
 import * as planetService from "../services/planetService.js"
 
@@ -8,7 +9,14 @@ export const getAllPlanets = async (
   next: NextFunction,
 ): Promise<void> => {
   try {
-    const planets = await planetService.getAllPlanets();
+    const { name, min_temp, max_temp } = req.query;
+
+    const planets = await planetService.getAllPlanets({
+      name: name as string | undefined,
+      min_temp: min_temp ? Number(min_temp) : undefined,
+      max_temp: max_temp ? Number(max_temp) : undefined,
+    });
+
     res.status(200).json(planets);
   } catch (err) {
     next(err);

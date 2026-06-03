@@ -8,8 +8,6 @@ export const findAllAliens = async (
     let sql = "SELECT * FROM aliens";
     const values: any[] = [];
     const conditions: string[] = [];
-    console.log("SQL:", sql);
-console.log("VALUES:", values); //TESTING DONT FORGET TO RTEMOVE
 
     if (filters.aggression) {
       values.push(filters.aggression);
