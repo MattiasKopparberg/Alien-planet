@@ -1,43 +1,61 @@
-export default function PlanetModal() {
+import type { Planet } from "../types/types";
+import type { Alien } from "../types/types";
+
+interface Props {
+  planet: Planet;
+  aliens: Alien[];
+  onClose: () => void;
+}
+
+export default function PlanetModal({ planet, aliens, onClose}: Props) {
   return (
-    <div className="relative text-light-blue w-160 rounded-xl p-8 backdrop-blur-xs bg-[linear-gradient(135deg,rgba(255,255,255,0.02),rgba(255,255,255,0.02))] border border-[rgba(255,255,255,0.15)] border-t-[rgba(255,255,255,0.3)]">
+    <div className="relative text-light-blue w-190 rounded-xl p-8 backdrop-blur-xs bg-[linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0.02))] border border-[rgba(255,255,255,0.15)] border-t-[rgba(255,255,255,0.3)]">
       <span
-        // onClick={onClose}
+        onClick={onClose}
         className="absolute top-3 right-5 text-xl cursor-pointer hover:text-magenta select-none">
         ✕
       </span>
-      <div className="flex items-center gap-5">
+      <div className="flex items-center gap-7">
         <img
-          className="h-60 w-60 object-cover"
-          src="../../Planet-fallback.jpg"
+          className="h-60 w-60 object-cover rounded-xl"
+          src={`https://alienplanet.onrender.com/api/planets/${planet.planet_id}/image`}
+            alt={planet.name}
+            onError={(e) => {
+              e.currentTarget.src = "/Planet-fallback.jpg";
+              e.currentTarget.onerror = null;
+            }}
         />
         <div className="flex-col">
-          <h2 className="font-subheading mb-3 text-xl">Planet Name</h2>
+          <h2 className="font-subheading mb-3 text-xl">{planet.name}</h2>
           <p className="font-paragraph">
-            <span className="font-bold">Surface Area: </span>Area
+            <span className="font-bold">Surface Area: </span>{planet.surface_area}
           </p>
           <p className="font-paragraph">
-            <span className="font-bold">Avg temperature: </span> 0°C
+            <span className="font-bold">Avg temperature: </span>{planet.avg_temp}
           </p>
         </div>
       </div>
       <p className="font-paragraph mt-3">
-        Planet Description. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Suspendisse molestie ligula eu felis mattis ultrices. Nullam vel
-        scelerisque lectus, at gravida nisi. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit.{" "}
+        {planet.descr}
       </p>
       <div className="mt-5">
         <h2 className="font-subheading mb-3">Inhabitants</h2>
         <div className="flex gap-5">
-          <img
-            className="h-40 w-40 object-cover"
-            src="../../Alien-fallback.jpg"
-          />
-          <img
-            className="h-40 w-40 object-cover"
-            src="../../Alien-fallback.jpg"
-          />
+          
+          {aliens.map((alien) => (
+            <div key={alien.alien_id} className="flex flex-col">
+        <img
+          className="h-36 w-36 object-cover rounded-xl"
+          src={`https://alienplanet.onrender.com/api/aliens/${alien.alien_id}/image`}
+          alt={alien.species}
+          onError={(e) => {
+            e.currentTarget.src = "/Alien-fallback.jpg";
+            e.currentTarget.onerror = null;
+          }}
+        />
+        <p className="text-center mt-2 text-[13px]">{alien.species}</p>
+        </div>
+      ))}
         </div>
       </div>
     </div>

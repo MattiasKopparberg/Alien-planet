@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import "../App.css";
 import heroImg from "../assets/images/hero-img.jpg";
-import AlienModal from "../components/AlienModal";
-import PlanetModal from "../components/PlanetModal";
 
 export default function Home() {
   return (
@@ -30,8 +28,6 @@ export default function Home() {
           </button>
         </Link>
       </div>
-      <AlienModal />
-      <PlanetModal />
     </div>
   );
 }
