@@ -6,7 +6,7 @@ interface ListProps<T> {
 
 export default function List<T>({ items, renderItem }: ListProps<T>) {
   return (
-    <ul>
+    <ul className="flex flex-wrap justify-center gap-7 py-20 px-8">
       {/* loopar igenom arrayen, anropar renderItem med ett planet/alien-objekt och renderar ett Card */}
       {items.map((item, index) => (
         <li key={index}>{renderItem(item)}</li>

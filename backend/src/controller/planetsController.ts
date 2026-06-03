@@ -1,7 +1,8 @@
 import type { Request, Response, NextFunction } from "express";
 import type { PlanetFilters } from "../types/types.js";
 import { join } from "node:path";
-import * as planetService from "../services/planetService.js"
+import * as planetService from "../services/planetService.js";
+import * as alienService from "../services/alienService.js";
 
 export const getAllPlanets = async (
   req: Request,
@@ -59,11 +60,6 @@ export const getPlanetImage = async (
       return;
     }
 
-    // const planet = await planetService.getPlanetById(Number(id));
-    // if (!planet) {
-    //   res.status(404).json({ error: `Planet with id "${id}" not found` });
-    //   return;
-    // }
     const planetImgPath = join(
       import.meta.dirname,
       "../../public/images/Planets/",
@@ -73,5 +69,27 @@ export const getPlanetImage = async (
     res.status(200).sendFile(planetImgPath);
   } catch (e) {
     next(e);
+  }
+};
+
+export const getPlanetInhabitants = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
+  try {
+    const id = Number(req.params.id);
+    if (isNaN(id) || id <= 0) {
+      res.status(400).json({ error: "Invalid Planet ID" });
+      return;
+    }
+    const aliens = await alienService.getAliensByPlanet(id);
+    if (!aliens) {
+      res.status(404).json({ error: "No aliens found" });
+      return;
+    }
+    res.status(200).json(aliens);
+  } catch (err) {
+    next(err);
   }
 };

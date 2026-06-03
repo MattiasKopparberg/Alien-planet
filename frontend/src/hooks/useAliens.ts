@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import type { Alien } from "../types/types";
-import { getAllAliens } from "../services/api";
+import { getAllAliens } from "../services/aliensApi";
 
 export function useAliens() {
   const [aliens, setAliens] = useState<Alien[]>([]);

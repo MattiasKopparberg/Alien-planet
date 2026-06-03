@@ -448,3 +448,54 @@ CORS issues
 
 * Se åvan
 * Planera sprint 2 på tisdag :D
+
+  ## 2026-06-02
+
+  ### Sprint 2 planering 9-9.30 ,(paus för lektion) Sen satt vi igen 10.15 - 11.30
+
+*LISETTE LOGGAR IDAG*
+ Vi inledde dagen med att gå igenom eftersläp från föregående sprint.   
+ Därefter bröt vi ner features i konkreta work items.  
+ Efter en lektionspaus städade vi upp backloggen, vilket var behövligt.  
+ 
+ När work items var klara gick vi över till tidsestimering och fördelning.   
+ Vi märker att FE bär en tyngre last i slutet – backend planerar att avlasta.  
+
+ ![Sprint 2 planering](./img/sprint2_figjam.png)
+
+![Sprint 2 planering 2](./img/sprint2_figjam2.png)
+
+![Mål](./img/mål_figjam.png)
+
+### Dagens jobb
+
+**Mattias:**
+- ✅ Sprint 2 planering på förmiddagen
+- ✅ Alien filtering endpoint
+
+**Lisette:**
+- ✅ Sprint 2 planering på förmiddagen  
+- ✅ Suttit med frontend och gjort några slutgiltliga designbeslut  
+- ✅ Stylast Listan för att visa Aliens och Planets  
+- ✅ Stylat AlienCard och PlanetCard  
+
+**Rebecka:**  
+- ✅ Sprint 2 planering på förmiddagen
+- ✅ Suttit med frontend och gjort några slutgiltliga designbeslut
+- ✅ Fixat fetch-funktionalitet till planets
+- ✅ Bilder till både planets och aliens 
+
+**Emelie:**  
+- ✅ Sprint 2 planering på förmiddagen  
+- ✅ Suttit med frontend och gjort några slutgiltliga designbeslut
+- ✅ Skapat wireframes för responsiva lägen i Figma med enkel design
+- ✅ Modifierat Aliens och Planetmodal så att textfält stämmer överens med API  
+
+**Linnea:**  
+- ✅ Endpoint som returnerar aliens som bor på en specifik planet (routing, controller, service, model)   
+- ✅ Planerat för deploy, inkl hitta och välja tjänster  
+- ✅ DB på Aiven, free tier mySQL  
+- ✅ Backend live på Render  
+- ✅ Frontend live på Render  
+- ✅ Koppling mellan live DB och Backend  
+   
