@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import PlanetCard from "../components/planets/PlanetCard";
 import List from "../components/List";
 import { usePlanets } from "../hooks/usePlanets";
+import LoadingSpinner from "../components/loading/LoadingSpinner";
 import "../App.css";
 import PlanetFilterBar from "../components/planets/PlanetFilterBar";
 
@@ -19,6 +20,7 @@ export default function Planets() {
       return true;
     });
   }, [planets, surfaceArea, temp]);
+  const { planets, error, isLoading } = usePlanets();
 
   if (error) return <p>{error}</p>;
 
@@ -38,6 +40,20 @@ export default function Planets() {
         items={filtered}
         renderItem={(item) => <PlanetCard planet={item} />}
       />
+
+      {isLoading ? (
+        <>
+          <h2 className="font-paragraph text-light-blue text-lg py-3 text-center w-full">
+            Planets are loading..
+          </h2>
+          <LoadingSpinner size="s" />
+        </>
+      ) : (
+        <List
+          items={planets}
+          renderItem={(item) => <PlanetCard planet={item} />}
+        />
+      )}
     </div>
   );
 }

@@ -5,6 +5,7 @@ import { getAllAliens } from "../services/aliensApi";
 export function useAliens() {
   const [aliens, setAliens] = useState<Alien[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   // fetches all aliens on mount, sets error state if fetch fails
   useEffect(() => {
@@ -12,6 +13,7 @@ export function useAliens() {
       try {
         const data = await getAllAliens();
         setAliens(data);
+        setIsLoading(false);
       } catch {
         setError("Something went wrong, could not fetch aliens");
       }
@@ -20,5 +22,5 @@ export function useAliens() {
     fetchAliens();
   }, []);
 
-  return { aliens, error };
+  return { aliens, error, isLoading };
 }
