@@ -232,7 +232,7 @@ Sprint# - Arkiv för respektive sprint
 Mattias:
 ✅ Alien GET endpoint (est 2h, faktiskt 1h 45m)
 ✅ Planet GET endpoint (est 1h faktiskt 30m)
-✅ Gemensamt script för back- och frontend (est 2h, faktiskt 2h 30m) (inkluderande spike) 
+✅ Gemensamt script för back- och frontend (est 2h, faktiskt 2h 30m) (inkluderande spike)
 
 Linnéa:  
 ✅ Skapat templates för våra möten i fig-jam  
@@ -244,20 +244,21 @@ Linnéa:
 Lisette:  
 ✅ - Genererat två fallback bilder ifall Alien- eller Planet bild inte kan laddas.  
 ✅ - Impleterat fallbavk om backend inte kan leverera en bild ska ett placeholder-kort visas.
-AlienCard visar en alien-placeholder och PlanetCard visar en planet-placeholder via onError på img-taggen. (1 h för båda punkter)  
+AlienCard visar en alien-placeholder och PlanetCard visar en planet-placeholder via onError på img-taggen. (1 h för båda punkter)
 
 Rebecka:  
-✅ - Implementerat fetch-funktion i api.ts för att hämta alla Aliens med felhantering. Skapade även custom hook useAliens som hämtar api-svaret och sparar i state samt error-state för felhantering. (1 1/2h ca) 
+✅ - Implementerat fetch-funktion i api.ts för att hämta alla Aliens med felhantering. Skapade även custom hook useAliens som hämtar api-svaret och sparar i state samt error-state för felhantering. (1 1/2h ca)
 
 Emelie:  
 ✅ - Länkat ihop sidor med knappar och navbar i App.tsx for now.  
-✅ - Satte upp en basic styling med Tailwind.  
+✅ - Satte upp en basic styling med Tailwind.
 
 ## 2026-05-26
 
-*MATTIAS LOGGAR IDAG*
+_MATTIAS LOGGAR IDAG_
 
 ### Dagens jobb
+
 Mattias:  
 ✅ -
 
@@ -265,90 +266,103 @@ Linnéa (glömde både att estimera tid samt att kolla hur lång tid det tog):
 ✅ - Skapat templates för möten i fig-jam  
 ✅ - Uppdaterat seed data för att motsvara redan genererade bilder  
 ✅ - Promptat fram nya bilder för återstående planeter och aliens enligt tidigare etablerad process, för att ha något att visa i appen  
-✅ - Middleware för error hantering + refaktorisera 404 till eget middleware  
+✅ - Middleware för error hantering + refaktorisera 404 till eget middleware
 
 Lisette:  
 ✅ - Haft möte med frontend hela förmiddagen gällande design  
 ✅ - Skapat dsignsystem  
-✅ - Gjort wireframes/protoyper  
-
+✅ - Gjort wireframes/protoyper
 
 Rebecka:  
 ✅ - Frontendmöte halva dagen för att gemensamt få fram designdokument  
 ✅ - Styling av navbar och implementerade loggan  
-✅ - Försökte testköra endpoints för aliens, fungerar inte än - fortsättning nästa vecka  
+✅ - Försökte testköra endpoints för aliens, fungerar inte än - fortsättning nästa vecka
 
 Emelie:  
 ✅ - Frontendmöte på förmiddagen för att få fram ett designdokument  
 ✅ - Lade in bestämda typsnitt och färger i vårt projekt och stylade med dessa.  
-✅ - Byggde en statisk modal för att öppna detaljvyn för Aliens och Planets.  
-
+✅ - Byggde en statisk modal för att öppna detaljvyn för Aliens och Planets.
 
 # Standup 2026-05-25 09:00-ca 10-00
 
 ## Lisette
 
 ### Har
-* Fetch-funktion för Aliens
+
+- Fetch-funktion för Aliens
 
 ### Ska
-* Frontendmöte
-* få fram designsystem
+
+- Frontendmöte
+- få fram designsystem
 
 ### Hinder
-* Noll
+
+- Noll
 
 ## Emelie
 
 ### Har
-* Fixat lite med Tailwind
-* lagt in basic färger och layout som kommer att ändras.
-* Kopplat ihop våra sidor med knappar och navbar.
+
+- Fixat lite med Tailwind
+- lagt in basic färger och layout som kommer att ändras.
+- Kopplat ihop våra sidor med knappar och navbar.
 
 ### Ska
-* Frontendmöte och få fram designsystem
+
+- Frontendmöte och få fram designsystem
 
 ### Hinder
-* Inget
+
+- Inget
 
 ## Mattias
 
 ### Har
-* Gjort klart Alien endpoint
+
+- Gjort klart Alien endpoint
 
 ### Ska
-* Göra klart Planet endpoint, merg:a PR
-* eve bugfixes eller error handling
+
+- Göra klart Planet endpoint, merg:a PR
+- eve bugfixes eller error handling
 
 ### Hinder
-* Inga hinder
+
+- Inga hinder
 
 ## Linnéa
 
 ### Har
-* Skrivit grupplogg för 25/5
-* implementerat endpoint för alienbild
-* implementerat endpoint för planetbild
+
+- Skrivit grupplogg för 25/5
+- implementerat endpoint för alienbild
+- implementerat endpoint för planetbild
 
 ### Ska
-* Ska evt lägga tid på bugfix i samband med att vi mergear
-* synka seed data med bilder, komplettera data m beskrivn.
-* prompta fram fler bilder för att komplettera data
-* Error handling middleware.
+
+- Ska evt lägga tid på bugfix i samband med att vi mergear
+- synka seed data med bilder, komplettera data m beskrivn.
+- prompta fram fler bilder för att komplettera data
+- Error handling middleware.
 
 ### Hinder
-* Privata omständigheter
+
+- Privata omständigheter
 
 ### Har
-* Genererat Fallback bilder
-* lagt till dem om alien- eller planetbild inte kan laddas
+
+- Genererat Fallback bilder
+- lagt till dem om alien- eller planetbild inte kan laddas
 
 ### Ska
-*  Sitta med Frontend och göra ett design system och wireframes
-* skriva loggboik
+
+- Sitta med Frontend och göra ett design system och wireframes
+- skriva loggboik
 
 ### Hinder
-* Har möte på eftermiddagen och kommer inte vara tillgänglig efter kl 13
+
+- Har möte på eftermiddagen och kommer inte vara tillgänglig efter kl 13
 
 ## Rebecka
 
@@ -357,111 +371,128 @@ Emelie:
 ## Ticket review
 
 ### CORS
+
 Snabbt och smidigt, men fungerar ej i nuläget
 
 ### Error handling middlware
+
 Mer detaljerad error handling, sepparat för dev miljö
 
 ### Logga och styling av navbar
+
 Gick bra, inga hinder
 
 ### Planets och Aliens endpoints
+
 Gick bra, liten spike för att kolla upp folder struktur
 
 ### Synka mock data med bilder
+
 Uppdaterade bilder för att matcha alien namn och standardisera bildnamn.
 
 ### API länk för bild till planeter och aliens
-Fungerar bra, CORS fortfarande blockar 
+
+Fungerar bra, CORS fortfarande blockar
 
 ### Fetch funktion
+
 Hemtar i nuläget mockdata, CORS behöver lösas innan databasen kan användas
 
 ### Fallback bild frontend
+
 Fungerar och visas korrekt
 
 ### Wireframe och prototyp klar i figma
+
 Disign dokument: https://www.figma.com/design/ZElW0NcOJJRJVzpnBP0aUw/Alien-Planets-design?node-id=0-1&p=f&t=UEFGNnc8yYIbCEIz-0
 
 ### Startup script för hela appen
+
 NPM install i både frontend och backend, seed, och starta både frontend och backend server sammtidigt
 
 ### Kvar
+
 90 fetch funktion för bildendpoint osv
 CORS issues
 
-
 ### Agilt
-* Grupp log
-* Strukturera våra möten
-* Uppdelning i mindre grupper FE/BE
-* Kanban arbete med Epic - Feature - Wi
-* Interna möten i arbetsgrupper
-* Gemensam planering genom daily standups
-* Tidsestimering
 
-### 2 stars and a wish 
+- Grupp log
+- Strukturera våra möten
+- Uppdelning i mindre grupper FE/BE
+- Kanban arbete med Epic - Feature - Wi
+- Interna möten i arbetsgrupper
+- Gemensam planering genom daily standups
+- Tidsestimering
+
+### 2 stars and a wish
 
 # Mattias:
-* ⭐ Gruppen hanterar github projects jättebra, bra struktur
-* ⭐ Frånvaro kommuniceras och sköts på ett snyggt sätt, vi kan planera runt det
-* 🌈 Issues i rätt kolumn
-  
+
+- ⭐ Gruppen hanterar github projects jättebra, bra struktur
+- ⭐ Frånvaro kommuniceras och sköts på ett snyggt sätt, vi kan planera runt det
+- 🌈 Issues i rätt kolumn
+
 # Emelie
-* ⭐ Bra kommunikation i gruppen
-* ⭐ Bra struktur på projektet, tydlighet
-* 🌈 Tydligheten kunde vara bättre avseende beslut, information har skett i flera kanaler
-  
+
+- ⭐ Bra kommunikation i gruppen
+- ⭐ Bra struktur på projektet, tydlighet
+- 🌈 Tydligheten kunde vara bättre avseende beslut, information har skett i flera kanaler
+
 # Rebecka
-* ⭐ Gruppens kommunikation  funkar jättebra
-* ⭐ Högt i tak och förlåtande  miljö att lära sig i och “göra fel”
-* 🌈Gillar inte att lämna projekt halv klara, önskar att det fanns tid att göra klart.
-  
+
+- ⭐ Gruppens kommunikation  funkar jättebra
+- ⭐ Högt i tak och förlåtande  miljö att lära sig i och “göra fel”
+- 🌈Gillar inte att lämna projekt halv klara, önskar att det fanns tid att göra klart.
+
 # Linnéa
-* ⭐ Arbetsgrupperna funkar bra,  effektivt med olika roller/ansvar
-* ⭐ Stjärna till frontend för snygg design :D
-* 🌈 Kom ihåg att uppdatera kanban board med assignee och status
-  
+
+- ⭐ Arbetsgrupperna funkar bra,  effektivt med olika roller/ansvar
+- ⭐ Stjärna till frontend för snygg design :D
+- 🌈 Kom ihåg att uppdatera kanban board med assignee och status
+
 # Lisette
-* ⭐ Roligt att alla delar med sig av sina kunskaper och bidrar till gemensamt lärande
-* ⭐ Samarbetet i gruppen
-* 🌈 Vore skönt att kunna fokusera helt på detta projektet i en avgränsad tidsrymd, svårt att switcha mellan detta och fördjupning
+
+- ⭐ Roligt att alla delar med sig av sina kunskaper och bidrar till gemensamt lärande
+- ⭐ Samarbetet i gruppen
+- 🌈 Vore skönt att kunna fokusera helt på detta projektet i en avgränsad tidsrymd, svårt att switcha mellan detta och fördjupning
 
 # Vad fungerar bra som vi ska fortsätta med
 
-* Ha högt i tak
-* Kommunicera
-* Gott samarbete
-* Epics/Features/work items - både planeringen och omsatt i kanban board
-* Interna samtal och arbetsgrupper (FE och BE team)
-* Bra balans mellan att sitta i grupp och ha möten och att jobba enskillt och koda
+- Ha högt i tak
+- Kommunicera
+- Gott samarbete
+- Epics/Features/work items - både planeringen och omsatt i kanban board
+- Interna samtal och arbetsgrupper (FE och BE team)
+- Bra balans mellan att sitta i grupp och ha möten och att jobba enskillt och koda
 
 # Vad ska vi sluta göra?
-* Jobba utan att fixa work item i kanban (rätt kolumn, assignee) board
 
+- Jobba utan att fixa work item i kanban (rätt kolumn, assignee) board
 
 # Vad skulle vi kunna testa? (eller fortsätta testa)
-* Estimera tiden en ticker tar och gemföra med hur långt det faktiskt tog
-*  Timeboxa möten, sätt av en tid flr slut och respektera den
+
+- Estimera tiden en ticker tar och gemföra med hur långt det faktiskt tog
+- Timeboxa möten, sätt av en tid flr slut och respektera den
 
 # Vad ska vi göra härnäst?
 
-* Se åvan
-* Planera sprint 2 på tisdag :D
+- Se åvan
+- Planera sprint 2 på tisdag :D
 
   ## 2026-06-02
 
   ### Sprint 2 planering 9-9.30 ,(paus för lektion) Sen satt vi igen 10.15 - 11.30
 
-*LISETTE LOGGAR IDAG*
- Vi inledde dagen med att gå igenom eftersläp från föregående sprint.   
+_LISETTE LOGGAR IDAG_
+Vi inledde dagen med att gå igenom eftersläp från föregående sprint.  
  Därefter bröt vi ner features i konkreta work items.  
- Efter en lektionspaus städade vi upp backloggen, vilket var behövligt.  
- 
- När work items var klara gick vi över till tidsestimering och fördelning.   
- Vi märker att FE bär en tyngre last i slutet – backend planerar att avlasta.  
+ Efter en lektionspaus städade vi upp backloggen, vilket var behövligt.
 
- ![Sprint 2 planering](./img/sprint2_figjam.png)
+När work items var klara gick vi över till tidsestimering och fördelning.  
+ Vi märker att FE bär en tyngre last i slutet – backend planerar att avlasta.
+
+![Sprint 2 planering](./img/sprint2_figjam.png)
 
 ![Sprint 2 planering 2](./img/sprint2_figjam2.png)
 
@@ -470,32 +501,133 @@ CORS issues
 ### Dagens jobb
 
 **Mattias:**
+
 - ✅ Sprint 2 planering på förmiddagen
 - ✅ Alien filtering endpoint
 
 **Lisette:**
-- ✅ Sprint 2 planering på förmiddagen  
-- ✅ Suttit med frontend och gjort några slutgiltliga designbeslut  
-- ✅ Stylast Listan för att visa Aliens och Planets  
-- ✅ Stylat AlienCard och PlanetCard  
 
-**Rebecka:**  
+- ✅ Sprint 2 planering på förmiddagen
+- ✅ Suttit med frontend och gjort några slutgiltliga designbeslut
+- ✅ Stylast Listan för att visa Aliens och Planets
+- ✅ Stylat AlienCard och PlanetCard
+
+**Rebecka:**
+
 - ✅ Sprint 2 planering på förmiddagen
 - ✅ Suttit med frontend och gjort några slutgiltliga designbeslut
 - ✅ Fixat fetch-funktionalitet till planets
-- ✅ Bilder till både planets och aliens 
+- ✅ Bilder till både planets och aliens
 
-**Emelie:**  
-- ✅ Sprint 2 planering på förmiddagen  
+**Emelie:**
+
+- ✅ Sprint 2 planering på förmiddagen
 - ✅ Suttit med frontend och gjort några slutgiltliga designbeslut
 - ✅ Skapat wireframes för responsiva lägen i Figma med enkel design
-- ✅ Modifierat Aliens och Planetmodal så att textfält stämmer överens med API  
+- ✅ Modifierat Aliens och Planetmodal så att textfält stämmer överens med API
 
-**Linnea:**  
-- ✅ Endpoint som returnerar aliens som bor på en specifik planet (routing, controller, service, model)   
-- ✅ Planerat för deploy, inkl hitta och välja tjänster  
-- ✅ DB på Aiven, free tier mySQL  
-- ✅ Backend live på Render  
-- ✅ Frontend live på Render  
-- ✅ Koppling mellan live DB och Backend  
-   
+**Linnea:**
+
+- ✅ Endpoint som returnerar aliens som bor på en specifik planet (routing, controller, service, model)
+- ✅ Planerat för deploy, inkl hitta och välja tjänster
+- ✅ DB på Aiven, free tier mySQL
+- ✅ Backend live på Render
+- ✅ Frontend live på Render
+- ✅ Koppling mellan live DB och Backend
+
+## 2026-06-03
+
+_REBECKA LOGGAR IDAG_
+
+### Standup 9:30-10:00
+
+Alla delade skärm och visade/förklarade vad man gjort sedan igår. Gick igenom har, ska och hinder en och en.
+
+Diskuterade sprint-status, vad som var kvar och tidsestimat. Noterade att det kan bli rörigt framöver när flera jobbar i samma filer samtidigt.
+
+Påtänkt workitem: Loading spinner
+
+Sprint review + retrospektiv planerat till 14:30-15:10
+
+![Daily standup](img/standup-figjam.png)
+
+### Sprint 2 Review + Retrospektiv 14:30-15:10
+
+Gick igenom alla tasks en och en och kontrollerade om de var färdiga eller behövde åtgärdas. Gick igenom todo och in progress i kanban-boardet. Kom överens om att det är bäst att ha så lite kvar att göra på måndag, små tweaks och förbereda redovisning samt diskutera igenom alla reflektionsfrågor.
+
+#### Vad har vi gjort hittills
+
+**Agilt:**
+
+- Fortsatt jobba med våra etablerade rutiner
+
+**Frontend:**
+
+- Loading spinner
+- Deploy
+- Responsiv navbar
+- Responsiv list
+- Styling och responsivitet homepage
+- Logo-navigering homepage
+- Modal för aliens och planets styling
+- Bild-URL med id för både aliens och planets
+- Filtrering för aliens och planets
+- Fetch-funktionalitet för både planets och aliens
+- Styling för cards och list i alien- samt planet-vy
+- Wireframes för mobil och tablet-läge
+
+**Backend:**
+
+- Bugfix
+- Deploy BE
+- Deploy DB + Seed
+- Kopplat BE till DB
+- Nya endpoints med queries
+
+#### Vad funkar bra som vi vill fortsätta med?
+
+- Samarbete
+- Kommunikation
+- Uppdelning
+- Flexibilitet
+- Assignees
+- Kolumndisciplinen i Kanban mycket bättre :D
+- Timeboxing och tidsdisciplin
+- Flera spikes
+- Tidsestimeringen
+
+#### Vad ska vi sluta göra?
+
+- Vi har åtgärdat våra "problem"punkter!
+
+#### Vad skulle vi kunna testa?
+
+- Det vore kul med mer tid till detta för ytterligare fördjupning
+
+#### Vad ska vi göra härnäst?
+
+- Avrunda
+- Presentera
+- Utvärdera
+- Reflektera
+- Skryta på LinkedIn
+
+![Daily standup](img/sprint2_retrospektiv_review.png)
+
+### Dagens jobb
+
+**Mattias:**
+
+**Linnéa:**
+
+**Lisette:**
+
+**Emelie:**
+
+**Rebecka:**
+
+- ✅ Ansvarig för grupplogg
+- ✅ Responsiv hamburger-meny för mobil/tablet
+- ✅ Responsiv layout för List-komponent
+- ✅ Responsivitet och styling för startsidan
+- ✅ Logo-navigering till startsidan
