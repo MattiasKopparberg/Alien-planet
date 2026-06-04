@@ -1,4 +1,3 @@
-
 import { useState, useMemo } from "react";
 import AlienCard from "../components/aliens/AlienCard";
 import AlienModal from "../components/AlienModal";
@@ -9,7 +8,6 @@ import type { Alien } from "../types/types";
 import { useAliens } from "../hooks/useAliens";
 import { usePlanets } from "../hooks/usePlanets";
 import LoadingSpinner from "../components/loading/LoadingSpinner";
-import AlienFilterBar from "../components/aliens/AlienFilterBar";
 
 export default function Aliens() {
   const { aliens, error: aliensError, isLoading } = useAliens();
