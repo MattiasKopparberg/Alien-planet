@@ -16,6 +16,7 @@ export function usePlanets() {
         setIsLoading(false);
       } catch {
         setError("Something went wrong, could not fetch planets");
+        setIsLoading(false);
       }
     }
 
