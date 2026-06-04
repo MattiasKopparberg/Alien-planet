@@ -9,7 +9,6 @@ import type { Alien } from "../types/types";
 import { useAliens } from "../hooks/useAliens";
 import { usePlanets } from "../hooks/usePlanets";
 import LoadingSpinner from "../components/loading/LoadingSpinner";
-import AlienFilterBar from "../components/aliens/AlienFilterBar";
 
 export default function Aliens() {
   const { aliens, error: aliensError, isLoading } = useAliens();
