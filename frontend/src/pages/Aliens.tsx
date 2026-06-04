@@ -1,3 +1,4 @@
+
 import { useState, useMemo } from "react";
 import AlienCard from "../components/aliens/AlienCard";
 import AlienModal from "../components/AlienModal";
@@ -7,9 +8,11 @@ import "../App.css";
 import type { Alien } from "../types/types";
 import { useAliens } from "../hooks/useAliens";
 import { usePlanets } from "../hooks/usePlanets";
+import LoadingSpinner from "../components/loading/LoadingSpinner";
+import AlienFilterBar from "../components/aliens/AlienFilterBar";
 
 export default function Aliens() {
-  const { aliens, error: aliensError } = useAliens();
+  const { aliens, error: aliensError, isLoading } = useAliens();
   const { planets, error: planetError } = usePlanets();
   const [selectedAggression, setSelectedAggression] = useState<string[]>([]);
   const [selectedHabitat, setSelectedHabitat] = useState<string[]>([]);
@@ -67,16 +70,22 @@ export default function Aliens() {
         selectedPlanet={selectedPlanet}
         onChangePlanet={setSelectedPlanet}
       />
-
-      {/* Show Alien cards, and open modal on click */}
-      <List
-        items={filtered}
-        renderItem={(item) => (
-          <AlienCard alien={item} onClick={() => setModalAlien(item)} />
-        )}
-      />
-
-        {/* Alien Modal */}
+      {isLoading ? (
+        <>
+          <h2 className="font-paragraph text-light-blue text-lg py-3 text-center w-full">
+            Aliens are loading..
+          </h2>
+          <LoadingSpinner size="s" />
+        </>
+      ) : (
+        <List
+          items={filtered}
+          renderItem={(item) => (
+            <AlienCard alien={item} onClick={() => setModalAlien(item)} />
+          )}
+        />
+      )}
+      ;
       {modalAlien && modalPlanet && (
         <div className="flex justify-center items-center fixed inset-0 z-50 bg-space-blue/60">
           <AlienModal
