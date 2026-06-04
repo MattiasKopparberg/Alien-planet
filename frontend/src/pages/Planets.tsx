@@ -7,7 +7,7 @@ import type { Planet } from "../types/types";
 import "../App.css";
 import PlanetModal from "../components/PlanetModal";
 import LoadingSpinner from "../components/loading/LoadingSpinner";
-// import PlanetFilterBar from "../components/planets/PlanetFilterBar";
+import PlanetFilterBar from "../components/planets/PlanetFilterBar";
 
 export default function Planets() {
   const { planets, error: planetError, isLoading } = usePlanets();
@@ -40,12 +40,12 @@ export default function Planets() {
       <h1 className="font-heading text-center heading-planet text-7xl py-2">
         Planets
       </h1>
-      {/* <PlanetFilterBar
+      <PlanetFilterBar
         surfaceArea={surfaceArea}
         onSurfaceAreaChange={setSurfaceArea}
         temp={temp}
         onTempChange={setTemp}
-      /> */}
+      />
       {isLoading ? (
         <>
           <h2 className="font-paragraph text-light-blue text-lg py-3 text-center w-full">
