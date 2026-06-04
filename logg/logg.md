@@ -283,7 +283,7 @@ Emelie:
 ✅ - Lade in bestämda typsnitt och färger i vårt projekt och stylade med dessa.  
 ✅ - Byggde en statisk modal för att öppna detaljvyn för Aliens och Planets.
 
-# Standup 2026-05-25 09:00-ca 10-00
+# Standup 2026-05-27 09:00-ca 10-00
 
 ## Lisette
 
