@@ -1,8 +1,14 @@
 import type { Planet } from "../../types/types";
 
-export default function PlanetCard({ planet }: { planet: Planet }) {
+interface Props {
+  planet: Planet;
+  onClick: () => void;
+}
+
+export default function PlanetCard({ planet, onClick }: Props) {
   return (
-    <div className="relative rounded-xl shadow-planet overflow-hidden w-61.25 h-54">
+    <div className="relative rounded-xl shadow-planet overflow-hidden w-61.25 h-54 cursor-pointer"
+    onClick={onClick}>
       <img
         className="w-full h-full object-cover"
         src={`https://alienplanet.onrender.com/api/planets/${planet.planet_id}/image`} // src fetches image directly from backend URL, no separate fetch needed

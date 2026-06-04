@@ -1,18 +1,28 @@
+
 import { useState, useMemo } from "react";
 import AlienCard from "../components/aliens/AlienCard";
+import AlienModal from "../components/AlienModal";
+import AlienFilterBar from "../components/aliens/AlienFilterBar";
 import List from "../components/List";
 import "../App.css";
+import type { Alien } from "../types/types";
 import { useAliens } from "../hooks/useAliens";
 import { usePlanets } from "../hooks/usePlanets";
 import LoadingSpinner from "../components/loading/LoadingSpinner";
 import AlienFilterBar from "../components/aliens/AlienFilterBar";
 
 export default function Aliens() {
-  const { aliens, error, isLoading } = useAliens();
-  const { planets } = usePlanets();
+  const { aliens, error: aliensError, isLoading } = useAliens();
+  const { planets, error: planetError } = usePlanets();
   const [selectedAggression, setSelectedAggression] = useState<string[]>([]);
   const [selectedHabitat, setSelectedHabitat] = useState<string[]>([]);
   const [selectedPlanet, setSelectedPlanet] = useState<number | null>(null);
+
+  //Alien Modals
+  const [modalAlien, setModalAlien] = useState<Alien | null>(null);
+  const modalPlanet = planets.find(
+    (p) => p.planet_id === modalAlien?.planet_id,
+  );
 
   // Toggle helpers
   function toggleAggression(val: string) {
@@ -43,7 +53,9 @@ export default function Aliens() {
     });
   }, [aliens, selectedAggression, selectedHabitat, selectedPlanet]);
 
-  if (error) return <p>{error}</p>;
+  if (aliensError) return <p>{aliensError}</p>;
+  if (planetError) return <p>{planetError}</p>;
+
   return (
     <div className="text-light-blue pt-28">
       <h1 className="font-heading text-center heading-alien text-7xl py-2">
@@ -68,8 +80,20 @@ export default function Aliens() {
       ) : (
         <List
           items={filtered}
-          renderItem={(item) => <AlienCard alien={item} />}
+          renderItem={(item) => (
+            <AlienCard alien={item} onClick={() => setModalAlien(item)} />
+          )}
         />
+      )}
+      ;
+      {modalAlien && modalPlanet && (
+        <div className="flex justify-center items-center fixed inset-0 z-50 bg-space-blue/60">
+          <AlienModal
+            alien={modalAlien}
+            planet={modalPlanet}
+            onClose={() => setModalAlien(null)}
+          />
+        </div>
       )}
     </div>
   );
