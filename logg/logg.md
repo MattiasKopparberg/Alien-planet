@@ -628,7 +628,10 @@ Gick igenom alla tasks en och en och kontrollerade om de var färdiga eller beh�
   
 **Lisette:**
 
-**Emelie:**
+**Emelie:**  
+- ✅ Funktionalitet för modaler (öppna rätt modal, stänga rätt modal)
+- ✅ Justering av styling i modaler
+- ✅ Konflikthantering på GitHub på grund av att vi råkat jobba i samma filer
 
 **Rebecka:**
 
