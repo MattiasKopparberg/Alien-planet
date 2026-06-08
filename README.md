@@ -6,11 +6,6 @@ A fullstack app for exploring aliens and the planets they inhabit! Each alien ha
 
 This project is built as part of a course in agile development within the Frontend Developer program at the higher vocational education Yrkeshögskolan Borås. The purpose was to simulate working as an agile team. We planned and ran sprints, held standups, sprint reviews and retrospectives and incrementally delivered our MVP. The agile process was the main focus, rather than the product itself. Feel free to take a look at our process documentation in the folder "logg".
 
-![Screen 1]("./frontend/public/aliensframe1.png")
-![Screen 1]("./frontend/public/aliensframe2.png")
-![Screen 1]("./frontend/public/aliensframe3.png")
-![Screen 1]("./frontend/public/aliensframe4.png")
-
 ## Tech stack
 
 **Frontend**
