@@ -169,19 +169,19 @@ Linnéa (mestadels frånvarande 20/5)
 
 #### Vad funkar bra som vi vill fortsätta med?
 
-- Tidsestimering! Bra träning och bra för projektet 
-- Feature based mappstruktur i frontend pga liten app 
-- Branch kopplat till issue! Mycket blir automatiserat, flödet blir tydligt.  
-- Github projects, och kopplingen till repot 
-- Märkning FE/BE/Alla → Tydlighet direkt i översikten 
-- När vi kommunicerar. Viktigt att alla är insatta i hela projektet, oavsett vad man jobbar med.  
-- Gruppen har parerat bra för frånvaro, mycket agilt. 
-- Löpande pull requests och reviews 
-- Vissa samtal kan föras i respektive mindre arbetsgrupp, för att hålla samtalet relevant för alla i den “stora kanalen”
+- Tidsestimering! Bra träning och bra för projektet. 
+- Feature based mappstruktur i frontend pga liten app. 
+- Branch kopplat till issue! Mycket blir automatiserat, flödet blir tydligt. 
+- Github projects, och kopplingen till repot. 
+- Märkning FE/BE/Alla → Tydlighet direkt i översikten. 
+- När vi kommunicerar. Viktigt att alla är insatta i hela projektet, oavsett vad man jobbar med.  
+- Gruppen har parerat bra för frånvaro, mycket agilt.  
+- Löpande pull requests och reviews. 
+- Vissa samtal kan föras i respektive mindre arbetsgrupp, för att hålla samtalet relevant för alla i den “stora kanalen”. 
 
 #### Vad ska vi sluta göra?
 
-- Springa för snabbt. Det är frestande att bara jobba på, men vi påminner oss om fokus för kursen och prioriterar momenten som har med agil projektmetodik att göra. 
+- Springa för snabbt. Det är frestande att bara jobba på, men vi påminner oss om fokus för kursen och prioriterar momenten som har med agil projektmetodik att göra.
 - Tomma work items (skriv en beskrivning av vad den ska åstadkomma, sedan räcker det bra i kombination med självförklarande kod i PR)
 
 #### Vad skulle vi kunna testa att göra?
@@ -441,13 +441,13 @@ CORS issues
 
 # Rebecka
 
-- ⭐ Gruppens kommunikation  funkar jättebra
-- ⭐ Högt i tak och förlåtande  miljö att lära sig i och “göra fel”
+- ⭐ Gruppens kommunikation funkar jättebra
+- ⭐ Högt i tak och förlåtande miljö att lära sig i och “göra fel”
 - 🌈Gillar inte att lämna projekt halv klara, önskar att det fanns tid att göra klart.
 
 # Linnéa
 
-- ⭐ Arbetsgrupperna funkar bra,  effektivt med olika roller/ansvar
+- ⭐ Arbetsgrupperna funkar bra, effektivt med olika roller/ansvar
 - ⭐ Stjärna till frontend för snygg design :D
 - 🌈 Kom ihåg att uppdatera kanban board med assignee och status
 
