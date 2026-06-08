@@ -45,4 +45,4 @@ SKÄRMDUMPAR HÄR
 
 - GitHub Projects (Kanban board, issues, sub-issues)
 - Branch-per-issue + pull request reviews
-- Figma (design system & wireframes)
+- Figma (design system & wireframes, FigJam for agile process artifacts)
