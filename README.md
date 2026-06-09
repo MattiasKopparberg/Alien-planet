@@ -11,6 +11,23 @@ This project is built as part of a course in agile development within the Fronte
 ![Screen 3](./frontend/public/aliensframe3.png)
 ![Screen 4](./frontend/public/aliensframe4.png)
 
+## Endpoints
+
+[Visit our API!](https://alienplanet.onrender.com/api/)
+
+| Route | What it returns |
+|-------|-----------------|
+| `GET /api/aliens/<id>/image` | PNG image file of the alien |
+| `GET /api/planets/<id>/image` | PNG image file of the planet |
+| `GET /api/planets/<id>` | Always an array. The planet matching the id; if no id is given, all planets are returned |
+| `GET /api/aliens/<id>` | Always an array. The alien matching the id; if no id is given, all aliens are returned |
+| `GET /api/aliens/search?aggression=<value>` | Array of all aliens with a matching aggression |
+| `GET /api/planets/<id>/aliens` | Array of the aliens that live on a given planet |
+| `GET /api/planets?min_temp=<min>&max_temp=<max>` | Array of planets with a temperature within the given range |
+| `GET /api/aliens?aggression=<xxx>` | Array of aliens with a given aggression |
+| `GET /api/aliens?habitat=<xxx>` | Array of aliens with a given habitat |
+| `GET /api/aliens?habitat=<xxx>&aggression=<xxx>` | Array of aliens with a given habitat AND a given aggression |
+
 ## Tech stack
 
 **Frontend**
